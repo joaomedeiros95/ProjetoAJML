@@ -1,0 +1,150 @@
+package br.ufrn.imd.emovie.server.executor;
+
+import java.util.Date;
+import java.util.List;
+import java.util.Map;
+
+import org.apache.log4j.Logger;
+
+import com.google.gson.Gson;
+import com.google.gson.JsonObject;
+import com.sun.net.httpserver.HttpExchange;
+
+import br.ufrn.imd.emovie.dao.exception.DaoException;
+import br.ufrn.imd.emovie.model.User;
+import br.ufrn.imd.emovie.model.UserType;
+import br.ufrn.imd.emovie.service.UserService;
+import br.ufrn.imd.emovie.service.exception.ServiceException;
+
+/**
+ * 
+ * @author lucas cristiano
+ *
+ */
+@SuppressWarnings("restriction")
+public class UserServiceExecutor extends ServiceExecutorTemplate {
+
+	private static final Logger LOGGER = Logger.getLogger(UserServiceExecutor.class.getName());
+	
+	private static final String LOGIN = "login";
+
+	private UserService userService;
+
+	public UserServiceExecutor() {
+		userService = UserService.getInstance();
+	}
+
+	@Override
+	public String processGetFindOne(Integer id) throws DaoException {
+		User user = userService.find(id);
+		Gson gson = new Gson();
+		String jsonMovie = gson.toJson(user); // returns empty string if user == null
+		return jsonMovie;
+	}
+
+	@Override
+	public String processGetFindAll() throws DaoException {
+		List<User> users = userService.listAll();
+		Gson gson = new Gson();
+		String jsonMovie = gson.toJson(users); // returns empty string if user == null
+		return jsonMovie;
+	}
+
+	@Override
+	public String processGetOther(HttpExchange httpExchange, List<String> urlParams,
+			Map<String, Object> requestParams) {
+		String operation = (String) requestParams.get("operation");
+		if (operation.equals(LOGIN)) {
+			try {
+				User usuario = new User();
+				usuario.setEmail((String) requestParams.get("email"));
+				usuario.setPassword((String) requestParams.get("senha"));
+
+				User user = userService.checkLogin(usuario);
+
+				Gson gson = new Gson();
+				String jsonTicket = gson.toJson(user);
+				return jsonTicket;
+			} catch (DaoException e) {
+				LOGGER.error(e.getMessage(), e);
+				return createErrorJSONResponse(e.getMessage());
+			}
+		}
+		return "";
+	}
+
+	@Override
+	public String processPostCreate(Map<String, Object> requestParams) {
+		String name = (String) requestParams.get("name");
+		String email = (String) requestParams.get("email");
+		String password = userService.generatePassword();
+		Date createdAt = new Date();
+
+		try {
+			User user = new User(name, password, email, UserType.USER, createdAt);
+			userService.create(user);
+
+
+			String objectJSON = new Gson().toJson(user);
+			JsonObject responseJson = new JsonObject();
+			responseJson.addProperty("success", true);
+			responseJson.addProperty("user", objectJSON);
+			return responseJson.toString();
+		} catch (ServiceException e) {
+			LOGGER.warn(e.getMessage());
+			return createErrorJSONResponse(e.getMessage());
+		} catch (DaoException e) {
+			LOGGER.error(e.getMessage(), e);
+			return createErrorJSONResponse(e.getMessage());
+		}
+	}
+
+	@Override
+	public String processPostUpdate(Map<String, Object> requestParams) {
+		int id = Integer.parseInt((String) requestParams.get("id"));
+		String name = (String) requestParams.get("name");
+		String password = (String) requestParams.get("password");
+		String email = (String) requestParams.get("email");
+		Date createdAt = new Date();
+
+		try {
+			User user = new User(id, name, password, email, UserType.USER, createdAt);
+			userService.update(user);
+
+			String objectJSON = new Gson().toJson(user);
+			JsonObject responseJson = new JsonObject();
+			responseJson.addProperty("success", true);
+			responseJson.addProperty("user", objectJSON);
+			return responseJson.toString();
+		} catch (ServiceException e) {
+			LOGGER.warn(e.getMessage());
+			return createErrorJSONResponse(e.getMessage());
+		} catch (DaoException e) {
+			LOGGER.error(e.getMessage(), e);
+			return createErrorJSONResponse(e.getMessage());
+		}
+	}
+
+	@Override
+	public String processPostDelete(Map<String, Object> requestParams) {
+		int id = Integer.parseInt((String) requestParams.get("id"));
+		try {
+			userService.delete(id);
+
+			JsonObject responseJson = new JsonObject();
+			responseJson.addProperty("success", true);
+			responseJson.addProperty("id", id);
+			return responseJson.toString();
+		} catch (DaoException e) {
+			LOGGER.error(e.getMessage(), e);
+			return createErrorJSONResponse(e.getMessage());
+		}
+	}
+
+	@Override
+	public String processPostOther(HttpExchange httpExchange, List<String> urlParams,
+			Map<String, Object> requestParams) {
+		LOGGER.warn("Operation not supported");
+		return createErrorJSONResponse("Operation not supported");
+	}
+}

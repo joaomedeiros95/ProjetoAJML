@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="aspectjml-lib/aspectjml-release1.8.beta1.jar"/>
+	<classpathentry kind="lib" path="aspectjml-lib/aspectjrt.jar"/>
+	<classpathentry kind="lib" path="dependencies/hibernate-core-5.0.4.Final.jar"/>
+	<classpathentry kind="lib" path="dependencies/hibernate-entitymanager-5.0.4.Final.jar"/>
+	<classpathentry kind="lib" path="dependencies/postgresql-9.4-1206-jdbc4 (1).jar"/>
+	<classpathentry kind="lib" path="dependencies/json-20151123.jar"/>
+	<classpathentry kind="lib" path="dependencies/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="dependencies/log4j-1.2.17.jar"/>
+	<classpathentry kind="lib" path="dependencies/gson-2.5.jar"/>
+	<classpathentry kind="lib" path="dependencies/hibernate-jpa-2.1-api-1.0.0.Final.jar"/>
+	<classpathentry kind="lib" path="dependencies/hibernate-commons-annotations-5.0.0.Final.jar"/>
+	<classpathentry kind="lib" path="dependencies/jboss-logging-3.3.0.Final.jar"/>
+	<classpathentry kind="lib" path="dependencies/jta-1.1.jar"/>
+	<classpathentry kind="lib" path="dependencies/antlr-2.7.7.jar"/>
+	<classpathentry kind="lib" path="dependencies/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="dependencies/jandex-1.2.2.Final.jar"/>
+	<classpathentry kind="lib" path="dependencies/javassist-3.18.1-GA.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
