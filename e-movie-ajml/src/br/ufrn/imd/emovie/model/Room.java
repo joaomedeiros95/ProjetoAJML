@@ -22,7 +22,8 @@ public class Room implements Serializable {
 	@GeneratedValue
 	@Column(name = "id_room")
 	private /*@ spec_public nullable @*/ Integer id;
-	private /*@ spec_public nullable @*/ Integer rows;
+	
+	private /*@ spec_public nullable @*/ int rows;
 
 	public Room() {
 		super();
@@ -47,11 +48,11 @@ public class Room implements Serializable {
 		this.id = id;
 	}
 
-	public Integer getRows() {
+	public int getRows() {
 		return rows;
 	}
 
-	public void setCapacity(Integer rows) {
+	public void setRows(int rows) {
 		this.rows = rows;
 	}
 

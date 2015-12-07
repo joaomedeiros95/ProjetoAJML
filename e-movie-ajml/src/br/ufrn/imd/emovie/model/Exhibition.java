@@ -25,6 +25,8 @@ public class Exhibition implements Serializable {
 	@Column(name = "id_exhibition")
 	private /*@ spec_public nullable @*/ Integer id;
 	
+	//@ public invariant 0 <= price;
+	
 	private /*@ spec_public @*/ float price;
 	
 	@ManyToOne
@@ -66,6 +68,9 @@ public class Exhibition implements Serializable {
 		return price;
 	}
 
+	/*@ ensures 0 < price;
+	  @ assignable price;
+	 */
 	public void setPrice(float price) {
 		this.price = price;
 	}
