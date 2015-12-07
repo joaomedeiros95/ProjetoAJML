@@ -22,20 +22,20 @@ public class Movie implements Serializable {
 	@Id
 	@GeneratedValue
 	@Column(name = "id_movie")
-	private Integer id;
-	private String name;
+	private /*@ spec_public nullable @*/ Integer id;
+	private /*@ spec_public nullable @*/ String name;
 	
 	@Column(length=10000)
-	private String synopsis;
+	private /*@ spec_public nullable @*/ String synopsis;
 
-	private String advertisement;
-	private String image;
+	private /*@ spec_public nullable @*/ String advertisement;
+	private /*@ spec_public nullable @*/ String image;
 
 	@Column(name = "start_exhibition")
-	private Date startExhibition;
+	private /*@ spec_public nullable @*/ Date startExhibition;
 
 	@Column(name = "end_exhibition")
-	private Date endExhibition;
+	private /*@ spec_public nullable @*/ Date endExhibition;
 
 	public Movie() {
 		super();

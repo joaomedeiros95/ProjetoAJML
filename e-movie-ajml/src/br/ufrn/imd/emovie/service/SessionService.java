@@ -10,8 +10,8 @@ import br.ufrn.imd.emovie.service.exception.ServiceException;
 
 public class SessionService {
 
-	private static SessionService sessionService;
-	private IDaoSession daoSession;
+	private /*@ spec_public nullable @*/ static SessionService sessionService;
+	private /*@ spec_public nullable @*/ IDaoSession daoSession;
 	
 	private SessionService() {
 		this.daoSession = new DaoSession();

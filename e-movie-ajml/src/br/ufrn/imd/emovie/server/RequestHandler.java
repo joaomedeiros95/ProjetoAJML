@@ -27,13 +27,12 @@ import br.ufrn.imd.emovie.server.executor.UserServiceExecutor;
  * @author lucas cristiano
  *
  */
-@SuppressWarnings("restriction")
 public class RequestHandler implements HttpHandler {
 
-	private static final Logger LOGGER = Logger.getLogger(RequestHandler.class.getName());
+	private /*@ spec_public nullable @*/ static final Logger LOGGER = Logger.getLogger(RequestHandler.class.getName());
 	
 	private static long REQUEST_NUMBER = 1;
-	private Map<String, IServiceExecutorTemplate> serviceExecutors;
+	private /*@ spec_public nullable @*/ Map<String, IServiceExecutorTemplate> serviceExecutors;
 
 	public RequestHandler() {
 		this.serviceExecutors = new HashMap<>();

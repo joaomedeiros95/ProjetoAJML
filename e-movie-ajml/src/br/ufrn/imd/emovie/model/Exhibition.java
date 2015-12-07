@@ -23,23 +23,21 @@ public class Exhibition implements Serializable {
 	@Id
 	@GeneratedValue
 	@Column(name = "id_exhibition")
-	private /*@ spec_public @*/ Integer id;
+	private /*@ spec_public nullable @*/ Integer id;
 	
 	private /*@ spec_public @*/ float price;
 	
-	//@ public invariant price > 0.0F;
-	
 	@ManyToOne
 	@JoinColumn(name = "id_movie")
-	private Movie movie;
+	private /*@ spec_public nullable @*/  Movie movie;
 	
 	@ManyToOne
 	@JoinColumn(name = "id_session")
-	private Session session;
+	private /*@ spec_public nullable @*/  Session session;
 	
 	@ManyToOne
 	@JoinColumn(name = "id_room")
-	private Room room;
+	private /*@ spec_public nullable @*/  Room room;
 
 	public Exhibition() {}
 	

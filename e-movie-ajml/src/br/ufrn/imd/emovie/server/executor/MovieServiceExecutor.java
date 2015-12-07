@@ -22,12 +22,11 @@ import br.ufrn.imd.emovie.service.exception.ServiceException;
  * @author lucas cristiano
  *
  */
-@SuppressWarnings("restriction")
 public class MovieServiceExecutor extends ServiceExecutorTemplate {
 
-	private static final Logger LOGGER = Logger.getLogger(MovieServiceExecutor.class.getName());
+	private /*@ spec_public nullable @*/ static final Logger LOGGER = Logger.getLogger(MovieServiceExecutor.class.getName());
 	
-	private MovieService movieService;
+	private /*@ spec_public nullable @*/ MovieService movieService;
 
 	public MovieServiceExecutor() {
 		movieService = MovieService.getInstance();

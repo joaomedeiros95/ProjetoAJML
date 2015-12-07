@@ -16,12 +16,11 @@ import br.ufrn.imd.emovie.service.ChairStateService;
  * @author lucas cristiano
  *
  */
-@SuppressWarnings("restriction")
 public class ChairServiceExecutor extends ServiceExecutorTemplate {
 
-	private static final Logger LOGGER = Logger.getLogger(TicketServiceExecutor.class.getName());
+	private /*@ spec_public nullable @*/ static final Logger LOGGER = Logger.getLogger(TicketServiceExecutor.class.getName());
 	
-	private ChairStateService chairStateService;
+	private /*@ spec_public nullable @*/ ChairStateService chairStateService;
 
 	public ChairServiceExecutor() {
 		chairStateService = ChairStateService.getInstance();

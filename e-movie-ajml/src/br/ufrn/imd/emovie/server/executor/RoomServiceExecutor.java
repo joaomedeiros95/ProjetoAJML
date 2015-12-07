@@ -19,12 +19,11 @@ import br.ufrn.imd.emovie.service.exception.ServiceException;
  * @author lucas cristiano
  *
  */
-@SuppressWarnings("restriction")
 public class RoomServiceExecutor extends ServiceExecutorTemplate {
 
-	private static final Logger LOGGER = Logger.getLogger(RoomServiceExecutor.class.getName());
+	private /*@ spec_public nullable @*/ static final Logger LOGGER = Logger.getLogger(RoomServiceExecutor.class.getName());
 	
-	private RoomService roomService;
+	private /*@ spec_public nullable @*/ RoomService roomService;
 
 	public RoomServiceExecutor() {
 		roomService = RoomService.getInstance();

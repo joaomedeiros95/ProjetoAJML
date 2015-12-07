@@ -9,7 +9,6 @@ import com.sun.net.httpserver.HttpExchange;
  * @author lucas cristiano
  *
  */
-@SuppressWarnings("restriction")
 public interface IServiceExecutorTemplate {
 
 	void execute(HttpExchange httpExchange);

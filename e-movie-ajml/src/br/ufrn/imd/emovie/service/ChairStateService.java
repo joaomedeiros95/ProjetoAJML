@@ -16,13 +16,13 @@ import br.ufrn.imd.emovie.model.Ticket;
 
 public class ChairStateService {
 
-	private static final int CHAIRS_PER_ROW = 10;
-	private static final List<String> ROW_IDENTIFIERS = Arrays.asList("A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z");
+	private /*@ spec_public nullable @*/ static final int CHAIRS_PER_ROW = 10;
+	private /*@ spec_public nullable @*/ static final List<String> ROW_IDENTIFIERS = Arrays.asList("A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z");
 	
-	private static ChairStateService chairStateService;
+	private /*@ spec_public nullable @*/ static ChairStateService chairStateService;
 	
-	private IDaoTicket daoTicket;
-	private IDaoExhibition daoExhibition;
+	private /*@ spec_public nullable @*/ IDaoTicket daoTicket;
+	private /*@ spec_public nullable @*/ IDaoExhibition daoExhibition;
 	
 	private ChairStateService() {
 		this.daoTicket = new DaoTicket();

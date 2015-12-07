@@ -21,14 +21,13 @@ import br.ufrn.imd.emovie.service.exception.ServiceException;
  * @author lucas cristiano
  *
  */
-@SuppressWarnings("restriction")
 public class UserServiceExecutor extends ServiceExecutorTemplate {
 
-	private static final Logger LOGGER = Logger.getLogger(UserServiceExecutor.class.getName());
+	private /*@ spec_public nullable @*/ static final Logger LOGGER = Logger.getLogger(UserServiceExecutor.class.getName());
 	
-	private static final String LOGIN = "login";
+	private /*@ spec_public nullable @*/ static final String LOGIN = "login";
 
-	private UserService userService;
+	private /*@ spec_public nullable @*/ UserService userService;
 
 	public UserServiceExecutor() {
 		userService = UserService.getInstance();

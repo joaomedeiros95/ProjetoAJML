@@ -10,8 +10,8 @@ import br.ufrn.imd.emovie.service.exception.ServiceException;
 
 public class ExhibitionService {
 
-	private static ExhibitionService exhibitionService;
-	private IDaoExhibition daoExhibition;
+	private /*@ spec_public nullable @*/ static ExhibitionService exhibitionService;
+	private /*@ spec_public nullable @*/ IDaoExhibition daoExhibition;
 	
 	private ExhibitionService() {
 		this.daoExhibition = new DaoExhibition();

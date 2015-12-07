@@ -21,8 +21,8 @@ public class Room implements Serializable {
 	@Id
 	@GeneratedValue
 	@Column(name = "id_room")
-	private Integer id;
-	private Integer rows;
+	private /*@ spec_public nullable @*/ Integer id;
+	private /*@ spec_public nullable @*/ Integer rows;
 
 	public Room() {
 		super();

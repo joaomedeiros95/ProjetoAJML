@@ -10,8 +10,8 @@ import br.ufrn.imd.emovie.service.exception.ServiceException;
 
 public class MovieService {
 
-	private static MovieService movieService;
-	private IDaoMovie daoMovie;
+	private /*@ spec_public nullable @*/ static MovieService movieService;
+	private /*@ spec_public nullable @*/ IDaoMovie daoMovie;
 	
 	private MovieService() {
 		this.daoMovie = new DaoMovie();

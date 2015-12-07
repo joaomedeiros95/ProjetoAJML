@@ -25,16 +25,15 @@ import br.ufrn.imd.emovie.service.exception.ServiceException;
  * @author lucas cristiano
  *
  */
-@SuppressWarnings("restriction")
 public class ExhibitionServiceExecutor extends ServiceExecutorTemplate {
 
-	private static final Logger LOGGER = Logger.getLogger(ExhibitionServiceExecutor.class.getName());
+	private /*@ spec_public nullable @*/ static final Logger LOGGER = Logger.getLogger(ExhibitionServiceExecutor.class.getName());
 	
-	private ExhibitionService exhibitionService;
+	private /*@ spec_public nullable @*/ ExhibitionService exhibitionService;
 
-	private MovieService movieService;
-	private SessionService sessionService;
-	private RoomService roomService;
+	private /*@ spec_public nullable @*/ MovieService movieService;
+	private /*@ spec_public nullable @*/ SessionService sessionService;
+	private /*@ spec_public nullable @*/ RoomService roomService;
 
 	public ExhibitionServiceExecutor() {
 		exhibitionService = ExhibitionService.getInstance();

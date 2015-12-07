@@ -19,7 +19,6 @@ import com.sun.net.httpserver.Filter;
  * @author lucas cristiano
  *
  */
-@SuppressWarnings("restriction")
 public class ParameterFilter extends Filter {
 
 	@Override

@@ -22,11 +22,11 @@ public class Session implements Serializable {
 	@Id
 	@GeneratedValue
 	@Column(name = "id_session")
-	private Integer id;
+	private /*@ spec_public nullable @*/ Integer id;
 	
 	@Column(name = "day_week")
-	private Integer dayWeek;
-	private Date hour;
+	private /*@ spec_public nullable @*/ Integer dayWeek;
+	private /*@ spec_public nullable @*/ Date hour;
 
 	public Session() {
 		super();

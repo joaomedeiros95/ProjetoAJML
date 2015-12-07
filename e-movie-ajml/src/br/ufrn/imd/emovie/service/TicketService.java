@@ -27,10 +27,10 @@ public class TicketService {
 	public static final long TICKET_CHANGE_TIME_LIMIT = ONE_HOUR * 4;
 	public static final long TICKET_CANCEL_TIME_LIMIT = ONE_HOUR * 6;
 	
-	private ChairStateService chairStateService;
+	private /*@ spec_public nullable @*/ ChairStateService chairStateService;
 	
-	private static TicketService ticketService;
-	private IDaoTicket daoTicket;
+	private /*@ spec_public nullable @*/ static TicketService ticketService;
+	private /*@ spec_public nullable @*/ IDaoTicket daoTicket;
 
 	private TicketService() {
 		this.chairStateService = ChairStateService.getInstance();

@@ -22,12 +22,11 @@ import br.ufrn.imd.emovie.service.exception.ServiceException;
  * @author lucas cristiano
  *
  */
-@SuppressWarnings("restriction")
 public class SessionServiceExecutor extends ServiceExecutorTemplate {
 
-	private static final Logger LOGGER = Logger.getLogger(SessionServiceExecutor.class.getName());
+	private /*@ spec_public nullable @*/ static final Logger LOGGER = Logger.getLogger(SessionServiceExecutor.class.getName());
 	
-	private SessionService sessionService;
+	private /*@ spec_public nullable @*/ SessionService sessionService;
 
 	public SessionServiceExecutor() {
 		sessionService = SessionService.getInstance();

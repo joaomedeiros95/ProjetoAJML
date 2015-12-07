@@ -10,8 +10,8 @@ import br.ufrn.imd.emovie.service.exception.ServiceException;
 
 public class RoomService {
 	
-	private static RoomService roomService;
-	private IDaoRoom daoRoom;
+	private /*@ spec_public nullable @*/ static RoomService roomService = new RoomService();
+	private /*@ spec_public nullable @*/ IDaoRoom daoRoom;
 	
 	private RoomService() {
 		this.daoRoom = new DaoRoom();

@@ -11,8 +11,8 @@ import br.ufrn.imd.emovie.service.exception.ServiceException;
 
 public class UserService {
 
-	private static UserService userService;
-	private IDaoUser daoUser;
+	private /*@ spec_public nullable @*/ static UserService userService;
+	private /*@ spec_public nullable @*/ IDaoUser daoUser;
 	
 	
 	private UserService() {

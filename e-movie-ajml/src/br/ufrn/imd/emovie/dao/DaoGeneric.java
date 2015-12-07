@@ -18,8 +18,8 @@ import br.ufrn.imd.emovie.dao.exception.DaoException;
  */
 public class DaoGeneric<T> implements IDaoGeneric<T> {
 	
-	private Class<T> classEntity;
-	private EntityManagerFactory factory = Persistence.createEntityManagerFactory("e-movie");
+	private /*@ spec_public nullable @*/ Class<T> classEntity;
+	private /*@ spec_public nullable @*/ EntityManagerFactory factory = Persistence.createEntityManagerFactory("e-movie");
 	
 	@SuppressWarnings("unchecked")
 	public DaoGeneric() {

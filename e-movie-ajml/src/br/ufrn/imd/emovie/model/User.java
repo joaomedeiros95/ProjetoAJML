@@ -19,16 +19,16 @@ public class User implements Serializable {
 	@Id
 	@GeneratedValue
 	@Column(name = "id_user")
-	private Integer id;
-	private String name;
-	private String password;
-	private String email;
+	private /*@ spec_public nullable @*/ Integer id;
+	private /*@ spec_public nullable @*/ String name;
+	private /*@ spec_public nullable @*/ String password;
+	private /*@ spec_public nullable @*/ String email;
 	
 	@Enumerated(EnumType.ORDINAL)
-	private UserType type;
+	private /*@ spec_public nullable @*/ UserType type;
 	
 	@Column(name = "created_at")
-	private Date createdAt;
+	private /*@ spec_public nullable @*/ Date createdAt;
 
 	public User() {
 		super();

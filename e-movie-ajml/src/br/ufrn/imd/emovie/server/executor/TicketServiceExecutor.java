@@ -25,16 +25,16 @@ import br.ufrn.imd.emovie.service.exception.ServiceException;
  * @author lucas cristiano
  *
  */
-@SuppressWarnings("restriction")
+@SuppressWarnings("unused")
 public class TicketServiceExecutor extends ServiceExecutorTemplate {
 
-	private static final Logger LOGGER = Logger.getLogger(TicketServiceExecutor.class.getName());
+	private /*@ spec_public nullable @*/ static final Logger LOGGER = Logger.getLogger(TicketServiceExecutor.class.getName());
 	
-	private static final String RETRIEVE_TOKEN = "retrieveToken";
+	private /*@ spec_public nullable @*/ static final String RETRIEVE_TOKEN = "retrieveToken";
 
-	private TicketService ticketService;
-	private UserService userService;
-	private ExhibitionService exhibitionService;
+	private /*@ spec_public nullable @*/ TicketService ticketService;
+	private /*@ spec_public nullable @*/ UserService userService;
+	private /*@ spec_public nullable @*/ ExhibitionService exhibitionService;
 
 	public TicketServiceExecutor() {
 		ticketService = TicketService.getInstance();

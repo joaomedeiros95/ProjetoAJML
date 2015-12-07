@@ -19,14 +19,13 @@ import br.ufrn.imd.emovie.dao.exception.DaoException;
  * @author lucas cristiano
  *
  */
-@SuppressWarnings("restriction")
 public abstract class ServiceExecutorTemplate implements IServiceExecutorTemplate {
 
-	private static final Logger LOGGER = Logger.getLogger(ServiceExecutorTemplate.class.getName());
+	private /*@ spec_public nullable @*/ static final Logger LOGGER = Logger.getLogger(ServiceExecutorTemplate.class.getName());
 	
-	public static final String CREATE_OPERATION = "create";
-	public static final String UPDATE_OPERATION = "update";
-	public static final String DELETE_OPERATION = "delete";
+	public /*@ nullable @*/ static final String CREATE_OPERATION = "create";
+	public /*@ nullable @*/ static final String UPDATE_OPERATION = "update";
+	public /*@ nullable @*/ static final String DELETE_OPERATION = "delete";
 	
 	public abstract String processGetFindOne(Integer id) throws DaoException;
 	public abstract String processGetFindAll() throws DaoException;

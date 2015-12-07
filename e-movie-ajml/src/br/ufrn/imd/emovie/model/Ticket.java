@@ -27,26 +27,26 @@ public class Ticket implements Serializable {
 	@Id
 	@GeneratedValue
 	@Column(name = "id_ticket")
-	private Integer id;
-	private String token;
+	private /*@ spec_public nullable @*/ Integer id;
+	private /*@ spec_public nullable @*/ String token;
 	
 	@OneToOne
 	@JoinColumn(name = "id_exhibition")
-	private Exhibition exhibition;
+	private /*@ spec_public nullable @*/ Exhibition exhibition;
 	
 	@Column(name = "chair_num")
-	private String chairNumber;
+	private /*@ spec_public nullable @*/ String chairNumber;
 	
 	@ManyToOne
 	@JoinColumn(name = "id_user")
-	private User user;
+	private /*@ spec_public nullable @*/ User user;
 	
 	@Column(name = "purchase_location")
 	@Enumerated(EnumType.ORDINAL)
-	private PurchaseLocation purchaseLocation;
+	private /*@ spec_public nullable @*/ PurchaseLocation purchaseLocation;
 	
 	@Column(name = "created_at")
-	private Date createdAt;
+	private /*@ spec_public nullable @*/ Date createdAt;
 
 	public Ticket() {
 		super();

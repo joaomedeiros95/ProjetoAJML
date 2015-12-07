@@ -39,6 +39,7 @@
 	<property name="main.class"                value="br.ufrn.imd.emovie.Server" />
 	<property name="app.lib"                   value="dependencies" />
 	<property name="aspectjml.lib"             value="aspectjml-lib" />
+	<property name="metainf"				   value="src/META-INF" />
 	<!-- NOTE: 'aspectjml.lib' MUST INCLUDE ASPECTJ WEAVERS, AJC AND ABC -->
 
 	<!-- CLASSPATH OF AspectJML TOOL FOR COMPILATION AND CHECKING TASKS -->
@@ -62,7 +63,7 @@
 			<include name="*.jar" />
 		</fileset>
 	</path>
-	
+
 	<!-- INPATH TO ACCEPT AS SOURCE BYTECODE ANY .CLASS FILE IN THE .JAR FILES OR DIRECTORIES ON PATH -->
 	<path id="inpath">
 		<!-- IF YOU HAVE LIBS THAT SHOULD BE PROCESSED, UNCOMMENT THE FOLLOWING -->
@@ -81,6 +82,11 @@
 	<!-- CLEANUP -->
 	<target name="clean">
 		<delete dir="${dest.dir}" />
+		<mkdir dir="${dest.dir}/META-INF"/>
+		<copy todir="${dest.dir}/META-INF">
+			<fileset dir="${metainf}" />
+		</copy>
+		<copy file="${src.dir}/log4j.properties" todir="${dest.dir}"/>
 	</target>
 
 	<!-- CLEANUP CROSS REFERENCE INFORMATION ABOUT THE SPECIFIED CROSSCUTTING CONTRACTS-->
@@ -129,7 +135,7 @@
 		    showweaveinfo="false" quiet="false" verbose="false" fork="false">
 		</ajmlc>
 	</target>
-	
+
 	<target name="ajmlc-cac" depends="clean,prepare" description="Ant task responsible for compiling Java files annotated with AspectJML using ajmlc compiler version ${AspectJML}">
 		<ajmlc destdir="${dest.dir}" srcdir="${src.dir}" sourcepathref="sourcepath" classpathref="classpath" inpath="inpath" print="false" source="1.7" ajweaver="ajc" 
 			defaultnonnull="true" norepresentserror="false" noexecutionsiteinstrumenation="false" callsiteinstrumenation="false" clientawarechecking="true" 
@@ -137,7 +143,7 @@
 		    showweaveinfo="false" quiet="false" verbose="false" fork="false">
 		</ajmlc>
 	</target>
-	
+
 	<target name="ajmlc-javadoc" depends="clean,prepare" description="Ant task responsible for compiling Java files documented with javadoc using AspectJML/ajmlc compiler version ${AspectJML}">
 		<ajmlc destdir="${dest.dir}" srcdir="${src.dir}" sourcepathref="sourcepath" classpathref="classpath" inpath="inpath" print="false" source="1.7" ajweaver="ajc" 
 			defaultnonnull="false" norepresentserror="false" noexecutionsiteinstrumenation="false" callsiteinstrumenation="false" clientawarechecking="true" 
@@ -152,9 +158,9 @@
 		   defaultnonnull="true" norepresentserror="false" noexecutionsiteinstrumenation="false" callsiteinstrumenation="false" clientawarechecking="false" 
 		   multiplespeccasechecking="false" crosscutting="true" nocontractchecking="false" crossrefs="${crossref.dir}" 
 		   showweaveinfo="false" quiet="false" verbose="false" fork="false">
-	    </ajmlc>
+		</ajmlc>
 	</target>
-	
+
 	<target name="ajmlc-cac-source-printing" depends="clean,prepare" description="Ant task responsible for printing the instrumented source code in AspectJ format using ajmlc compiler version ${AspectJML}">
 		<ajmlc destdir="${dest.dir.isc}" srcdir="${src.dir}" sourcepathref="sourcepath" classpathref="classpath" inpath="inpath" print="true" source="1.7" ajweaver="ajc" 
 			defaultnonnull="true" norepresentserror="false" noexecutionsiteinstrumenation="false" callsiteinstrumenation="false" clientawarechecking="false" 
@@ -162,7 +168,7 @@
 			showweaveinfo="false" quiet="false" verbose="false" fork="false">
 		</ajmlc>
 	</target>
-	
+
 	<target name="ajmlc-javadoc-source-printing" depends="clean,prepare" description="Ant task responsible for compiling Java files documented with javadoc using AspectJML/ajmlc compiler version ${AspectJML}">
 		<ajmlc destdir="${dest.dir.isc}" srcdir="${src.dir}" sourcepathref="sourcepath" classpathref="classpath" inpath="inpath" print="false" source="1.7" ajweaver="ajc" 
 			defaultnonnull="false" norepresentserror="false" noexecutionsiteinstrumenation="false" callsiteinstrumenation="false" clientawarechecking="true" 
