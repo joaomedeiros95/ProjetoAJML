@@ -60,6 +60,7 @@ public class Exhibition implements Serializable {
 		return this.id;
 	}
 
+	//@ ensures this.id == id;
 	public void setId(Integer id) {
 		this.id = id;
 	}
@@ -68,7 +69,8 @@ public class Exhibition implements Serializable {
 		return price;
 	}
 
-	/*@ ensures 0 < price;
+	/*@ requires 0 < price;
+	  @ ensures this.price == price;
 	  @ assignable price;
 	 */
 	public void setPrice(float price) {
@@ -79,6 +81,7 @@ public class Exhibition implements Serializable {
 		return movie;
 	}
 
+	//@ ensures this.movie == movie;
 	public void setMovie(Movie movie) {
 		this.movie = movie;
 	}
@@ -87,6 +90,7 @@ public class Exhibition implements Serializable {
 		return session;
 	}
 
+	//@ ensures this.session == session;
 	public void setSession(Session session) {
 		this.session = session;
 	}
@@ -95,6 +99,7 @@ public class Exhibition implements Serializable {
 		return room;
 	}
 
+	//@ ensures this.room == room;
 	public void setRoom(Room room) {
 		this.room = room;
 	}

@@ -13,10 +13,14 @@ public class ExhibitionService {
 	private /*@ spec_public nullable @*/ static ExhibitionService exhibitionService;
 	private /*@ spec_public nullable @*/ IDaoExhibition daoExhibition;
 	
+	/*@ ensures this.daoExhibition != null;
+	 */
 	private ExhibitionService() {
 		this.daoExhibition = new DaoExhibition();
 	}
 	
+	/*@ ensures \result != null;
+	 */
 	public static ExhibitionService getInstance() {
 		if(exhibitionService == null) {
 			exhibitionService = new ExhibitionService();
@@ -25,31 +29,50 @@ public class ExhibitionService {
 		return exhibitionService;
 	}
 	
-	public Exhibition find(Integer id) throws DaoException {
+	/*@ assignable \nothing;
+	  @ ensures \result != null;
+	 */
+	public /*@ pure @*/ Exhibition find(Integer id) throws DaoException {
 		return daoExhibition.getById(id);
 	}
 	
-	public List<Exhibition> listAll() throws DaoException {
+	/*@ assignable \nothing;
+	 */
+	public /*@ pure @*/ List<Exhibition> listAll() throws DaoException {
 		return daoExhibition.getAll();
 	}
 	
-	public List<Exhibition> listByMovieId(Integer idMovie) {
+	/*@ assignable \nothing;
+	  @ ensures \result != null;
+	 */
+	public /*@ pure @*/ List<Exhibition> listByMovieId(Integer idMovie) {
 		return daoExhibition.listByMovieId(idMovie);
 	}
 	
-	public void create(Exhibition exhibition) throws ServiceException, DaoException {
+	/*@ assignable \nothing;
+	  @ ensures exhibition == \old(exhibition);
+	 */
+	public /*@ pure @*/ void create(Exhibition exhibition) throws ServiceException, DaoException {
 		daoExhibition.create(exhibition);
 	}
 	
-	public void update(Exhibition exhibition) throws ServiceException, DaoException {
+	/*@ assignable \nothing;
+	  @ ensures exhibition == \old(exhibition);
+	 */
+	public /*@ pure @*/ void update(Exhibition exhibition) throws ServiceException, DaoException {
 		daoExhibition.update(exhibition);
 	}
 	
-	public void delete(Exhibition exhibition) throws DaoException {
+	/*@ assignable \nothing;
+	  @ ensures exhibition == \old(exhibition);
+	 */
+	public /*@ pure @*/ void delete(Exhibition exhibition) throws DaoException {
 		daoExhibition.delete(exhibition);
 	}
 	
-	public void delete(Integer id) throws DaoException {
+	/*@ assignable \nothing;
+	 */
+	public /*@ pure @*/ void delete(Integer id) throws DaoException {
 		daoExhibition.delete(id);
 	}
 	

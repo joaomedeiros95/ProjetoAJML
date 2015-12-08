@@ -24,11 +24,15 @@ public class ChairStateService {
 	private /*@ spec_public nullable @*/ IDaoTicket daoTicket;
 	private /*@ spec_public nullable @*/ IDaoExhibition daoExhibition;
 	
+	/*@ ensures this.daoExhibition != null && this.daoTicket != null;
+	 */
 	private ChairStateService() {
 		this.daoTicket = new DaoTicket();
 		this.daoExhibition = new DaoExhibition();
 	}
 	
+	/*@ ensures \result != null;
+	 */
 	public static ChairStateService getInstance() {
 		if(chairStateService == null) {
 			chairStateService = new ChairStateService();
@@ -37,7 +41,10 @@ public class ChairStateService {
 		return chairStateService;
 	}
 	
-	public Map<String, Integer> findByExhibitionId(Integer idExhibition) throws DaoException {
+	/*@ assignable \nothing;
+	  @ ensures \result != null;
+	 */
+	public /*@ pure @*/ Map<String, Integer> findByExhibitionId(Integer idExhibition) throws DaoException {
 		Exhibition exhibition = daoExhibition.getById(idExhibition);
 		if(exhibition != null) {
 			Map<String, Integer> chairState = getExhibitionChairState(exhibition);
@@ -47,7 +54,9 @@ public class ChairStateService {
 		return null;
 	}
 	
-	public List<Map<String, Integer>> listAll() throws DaoException {
+	/*@ assignable \nothing;
+	 */
+	public /*@ pure @*/ List<Map<String, Integer>> listAll() throws DaoException {
 		List<Exhibition> exhibitions = daoExhibition.getAll();
 		
 		List<Map<String, Integer>> chairStates = new ArrayList<>();
@@ -58,8 +67,11 @@ public class ChairStateService {
 		
 		return chairStates;
 	}
-	
-	public Map<String, Integer> getExhibitionChairState(Exhibition exhibition) {
+
+	/*@ assignable \nothing;
+	  @ ensures \result != null;
+	 */
+	public /*@ pure @*/ Map<String, Integer> getExhibitionChairState(Exhibition exhibition) {
 		Integer roomRows = exhibition.getRoom().getRows();
 		
 		if(roomRows > ROW_IDENTIFIERS.size()) {

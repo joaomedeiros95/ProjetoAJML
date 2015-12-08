@@ -13,10 +13,14 @@ public class MovieService {
 	private /*@ spec_public nullable @*/ static MovieService movieService;
 	private /*@ spec_public nullable @*/ IDaoMovie daoMovie;
 	
+	/*@ ensures this.daoMovie != null;
+	 */
 	private MovieService() {
 		this.daoMovie = new DaoMovie();
 	}
 	
+	/*@ ensures \result != null;
+	 */
 	public static MovieService getInstance() {
 		if(movieService == null) {
 			movieService = new MovieService();
@@ -25,27 +29,43 @@ public class MovieService {
 		return movieService;
 	}
 	
-	public Movie find(Integer id) throws DaoException {
+	/*@ assignable \nothing;
+	  @ ensures \result != null;
+	 */
+	public /*@ pure @*/ Movie find(Integer id) throws DaoException {
 		return daoMovie.getById(id);
 	}
 	
-	public List<Movie> listAll() throws DaoException {
+	/*@ assignable \nothing;
+	 */
+	public /*@ pure @*/ List<Movie> listAll() throws DaoException {
 		return daoMovie.getAll();
 	}
 	
-	public void create(Movie movie) throws ServiceException, DaoException {
+	/*@ assignable \nothing;
+	  @ ensures movie == \old(movie);
+	 */
+	public /*@ pure @*/ void create(Movie movie) throws ServiceException, DaoException {
 		daoMovie.create(movie);
 	}
 	
-	public void update(Movie movie) throws ServiceException, DaoException {
+	/*@ assignable \nothing;
+	  @ ensures movie == \old(movie);
+	 */
+	public /*@ pure @*/ void update(Movie movie) throws ServiceException, DaoException {
 		daoMovie.update(movie);
 	}
 	
-	public void delete(Movie movie) throws DaoException {
+	/*@ assignable \nothing;
+	  @ ensures movie == \old(movie);
+	 */
+	public /*@ pure @*/ void delete(Movie movie) throws DaoException {
 		daoMovie.delete(movie);
 	}
 	
-	public void delete(Integer id) throws DaoException {
+	/*@ assignable \nothing;
+	 */
+	public /*@ pure @*/ void delete(Integer id) throws DaoException {
 		daoMovie.delete(id);
 	}
 	

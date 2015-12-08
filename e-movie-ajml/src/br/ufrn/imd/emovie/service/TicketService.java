@@ -32,11 +32,15 @@ public class TicketService {
 	private /*@ spec_public nullable @*/ static TicketService ticketService;
 	private /*@ spec_public nullable @*/ IDaoTicket daoTicket;
 
+	/*@ ensures this.chairStateService != null && this.daoTicket != null;
+	 */
 	private TicketService() {
 		this.chairStateService = ChairStateService.getInstance();
 		this.daoTicket = new DaoTicket();
 	}
 
+	/*@ ensures \result != null;
+	 */
 	public static TicketService getInstance() {
 		if (ticketService == null) {
 			ticketService = new TicketService();
@@ -45,23 +49,35 @@ public class TicketService {
 		return ticketService;
 	}
 
-	public Ticket find(Integer id) throws DaoException {
+	/*@ assignable \nothing;
+	  @ ensures \result != null;
+	 */
+	public /*@ pure @*/ Ticket find(Integer id) throws DaoException {
 		return daoTicket.getById(id);
 	}
 	
-	public Ticket getByToken(String token) {
+	/*@ assignable \nothing;
+	 */
+	public /*@ pure @*/ Ticket getByToken(String token) {
 		return daoTicket.getByToken(token);
 	}
 
-	public List<Ticket> listAll() throws DaoException {
+	/*@ assignable \nothing;
+	 */
+	public /*@ pure @*/ List<Ticket> listAll() throws DaoException {
 		return daoTicket.getAll();
 	}
 
-	public List<Ticket> listByExhibitionId(Integer idExhibition) {
+	/*@ assignable \nothing;
+	 */
+	public /*@ pure @*/ List<Ticket> listByExhibitionId(Integer idExhibition) {
 		return daoTicket.listByExhibitionId(idExhibition);
 	}
 
-	public void create(Ticket ticket) throws ServiceException, DaoException, InterruptedException {
+	/*@ assignable \nothing;
+	  @ ensures ticket == \old(ticket);
+	 */
+	public /*@ pure @*/ void create(Ticket ticket) throws ServiceException, DaoException, InterruptedException {
 		String token = generateToken(ticket.getUser().getId());
 		ticket.setToken(token);
 		
@@ -78,7 +94,10 @@ public class TicketService {
 		}
 	}
 
-	public void update(Ticket ticket) throws ServiceException, DaoException, InterruptedException {
+	/*@ assignable \nothing;
+	  @ ensures ticket == \old(ticket);
+	 */
+	public /*@ pure @*/ void update(Ticket ticket) throws ServiceException, DaoException, InterruptedException {
 		Server.writeSemaphore.acquire();
 		try {
 			if(compareDates(ticket, TICKET_CHANGE_TIME_LIMIT)) {
@@ -92,15 +111,18 @@ public class TicketService {
 		}
 	}
 
-	public void delete(Ticket ticket) throws DaoException {
+	/*@ assignable \nothing;
+	  @ ensures ticket == \old(ticket);
+	 */
+	public /*@ pure @*/ void delete(Ticket ticket) throws DaoException {
 		daoTicket.delete(ticket);
 	}
 
-	public void delete(Integer id) throws DaoException {
+	public /*@ pure @*/ void delete(Integer id) throws DaoException {
 		daoTicket.delete(id);
 	}
 	
-	public void delete(String token, User user) throws ServiceException, DaoException {
+	public /*@ pure @*/ void delete(String token, User user) throws ServiceException, DaoException {
 		Ticket ticket = daoTicket.getByToken(token);
 		
 		if(ticket != null && user.compareLogin(ticket.getUser())) {
@@ -118,6 +140,8 @@ public class TicketService {
 	 * Compare two dates to see the hours difference between then.
 	 * @param ticket
 	 * @return
+	 */
+	/*@ ensures ticket == \old(ticket);
 	 */
 	private boolean compareDates(Ticket ticket, long timeLimit) {
 		Session session = ticket.getExhibition().getSession();
@@ -148,6 +172,8 @@ public class TicketService {
 	 * @param userId Id of user that is buying the ticket
 	 * @return The generated token
 	 */
+	/*@ ensures \result != null;
+	 */
 	private String generateToken(Integer userId) {
 		char[] chars = "abcdefghijklmnopqrstuvwxyz1234567890".toCharArray();
 		StringBuilder sb = new StringBuilder();
@@ -170,6 +196,9 @@ public class TicketService {
 	 * Verifica o cumprimento das regras de negócio
 	 * @param ticket
 	 * @throws ServiceException
+	 */
+	/*@ assignable \nothing;
+	  @ ensures ticket == \old(ticket);
 	 */
 	private void validateTicket(Ticket ticket) throws ServiceException {
 		Ticket foundTicket = daoTicket.findByChairAndExhibition(ticket);	

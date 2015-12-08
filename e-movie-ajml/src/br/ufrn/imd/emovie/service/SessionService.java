@@ -13,10 +13,14 @@ public class SessionService {
 	private /*@ spec_public nullable @*/ static SessionService sessionService;
 	private /*@ spec_public nullable @*/ IDaoSession daoSession;
 	
+	/*@ ensures this.daoSession != null;
+	 */
 	private SessionService() {
 		this.daoSession = new DaoSession();
 	}
 	
+	/*@ ensures \result != null;
+	 */
 	public static SessionService getInstance() {
 		if(sessionService == null) {
 			sessionService = new SessionService();
@@ -25,27 +29,43 @@ public class SessionService {
 		return sessionService;
 	}
 	
-	public Session find(Integer id) throws DaoException {
+	/*@ assignable \nothing;
+	  @ ensures \result != null;
+	 */
+	public /*@ pure @*/ Session find(Integer id) throws DaoException {
 		return daoSession.getById(id);
 	}
 	
-	public List<Session> listAll() throws DaoException {
+	/*@ assignable \nothing;
+	 */
+	public /*@ pure @*/ List<Session> listAll() throws DaoException {
 		return daoSession.getAll();
 	}
 	
-	public void create(Session session) throws ServiceException, DaoException {
+	/*@ assignable \nothing;
+	  @ ensures session == \old(session);
+	 */
+	public /*@ pure @*/ void create(Session session) throws ServiceException, DaoException {
 		daoSession.create(session);
 	}
 	
-	public void update(Session session) throws ServiceException, DaoException {
+	/*@ assignable \nothing;
+	  @ ensures session == \old(session);
+	 */
+	public /*@ pure @*/ void update(Session session) throws ServiceException, DaoException {
 		daoSession.update(session);
 	}
 	
-	public void delete(Session session) throws DaoException {
+	/*@ assignable \nothing;
+	  @ ensures session == \old(session);
+	 */
+	public /*@ pure @*/ void delete(Session session) throws DaoException {
 		daoSession.delete(session);
 	}
 	
-	public void delete(Integer id) throws DaoException {
+	/*@ assignable \nothing;
+	 */
+	public /*@ pure @*/ void delete(Integer id) throws DaoException {
 		daoSession.delete(id);
 	}
 	

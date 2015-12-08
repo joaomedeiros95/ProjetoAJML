@@ -25,20 +25,20 @@ public class Session implements Serializable {
 	private /*@ spec_public nullable @*/ Integer id;
 	
 	@Column(name = "day_week")
-	private /*@ spec_public nullable @*/ Integer dayWeek;
+	private /*@ spec_public nullable @*/ int dayWeek;
 	private /*@ spec_public nullable @*/ Date hour;
 
 	public Session() {
 		super();
 	}
 	
-	public Session(Integer dayWeek, Date hour) {
+	public Session(int dayWeek, Date hour) {
 		this();
 		this.dayWeek = dayWeek;
 		this.hour = hour;
 	}
 	
-	public Session(Integer id, Integer dayWeek, Date hour) {
+	public Session(Integer id, int dayWeek, Date hour) {
 		this(dayWeek, hour);
 		this.id = id;
 	}
@@ -47,15 +47,17 @@ public class Session implements Serializable {
 		return this.id;
 	}
 
+	//@ ensures this.id == id;
 	public void setId(Integer id) {
 		this.id = id;
 	}
 
-	public Integer getDayWeek() {
-		return this.dayWeek;
+	public int getDayWeek() {
+		return dayWeek;
 	}
 
-	public void setDayWeek(Integer dayWeek) {
+	//@ ensures this.dayWeek == dayWeek;
+	public void setDayWeek(int dayWeek) {
 		this.dayWeek = dayWeek;
 	}
 
@@ -63,6 +65,7 @@ public class Session implements Serializable {
 		return this.hour;
 	}
 
+	//@ ensures this.hour == hour;
 	public void setHour(Date hour) {
 		this.hour = hour;
 	}

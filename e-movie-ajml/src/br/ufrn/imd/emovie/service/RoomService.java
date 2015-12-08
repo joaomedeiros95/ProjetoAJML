@@ -13,10 +13,14 @@ public class RoomService {
 	private /*@ spec_public nullable @*/ static RoomService roomService = new RoomService();
 	private /*@ spec_public nullable @*/ IDaoRoom daoRoom;
 	
+	/*@ ensures this.daoRoom != null;
+	 */
 	private RoomService() {
 		this.daoRoom = new DaoRoom();
 	}
 	
+	/*@ ensures \result != null;
+	 */
 	public static RoomService getInstance() {
 		if(roomService == null) {
 			roomService = new RoomService();
@@ -25,27 +29,43 @@ public class RoomService {
 		return roomService;
 	}
 	
-	public Room find(Integer id) throws DaoException {
+	/*@ assignable \nothing;
+	  @ ensures \result != null;
+	 */
+	public /*@ pure @*/ Room find(Integer id) throws DaoException {
 		return daoRoom.getById(id);
 	}
 	
-	public List<Room> listAll() throws DaoException {
+	/*@ assignable \nothing;
+	 */
+	public /*@ pure @*/ List<Room> listAll() throws DaoException {
 		return daoRoom.getAll();
 	}
 	
-	public void create(Room room) throws ServiceException, DaoException {
+	/*@ assignable \nothing;
+	  @ ensures room == \old(room);
+	 */
+	public /*@ pure @*/ void create(Room room) throws ServiceException, DaoException {
 		daoRoom.create(room);
 	}
 	
-	public void update(Room room) throws ServiceException, DaoException {
+	/*@ assignable \nothing;
+	  @ ensures room == \old(room);
+	 */
+	public /*@ pure @*/ void update(Room room) throws ServiceException, DaoException {
 		daoRoom.update(room);
 	}
 	
-	public void delete(Room room) throws DaoException {
+	/*@ assignable \nothing;
+	  @ ensures room == \old(room);
+	 */
+	public /*@ pure @*/ void delete(Room room) throws DaoException {
 		daoRoom.delete(room);
 	}
 	
-	public void delete(Integer id) throws DaoException {
+	/*@ assignable \nothing;
+	 */
+	public /*@ pure @*/ void delete(Integer id) throws DaoException {
 		daoRoom.delete(id);
 	}
 	

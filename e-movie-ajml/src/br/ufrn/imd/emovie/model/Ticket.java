@@ -70,6 +70,7 @@ public class Ticket implements Serializable {
 		return this.id;
 	}
 
+	//@ ensures this.id == id;
 	public void setId(Integer id) {
 		this.id = id;
 	}
@@ -78,6 +79,7 @@ public class Ticket implements Serializable {
 		return token;
 	}
 
+	//@ ensures this.token == token;
 	public void setToken(String token) {
 		this.token = token;
 	}
@@ -86,6 +88,7 @@ public class Ticket implements Serializable {
 		return exhibition;
 	}
 
+	//@ ensures this.exhibition == exhibition;
 	public void setExhibition(Exhibition exhibition) {
 		this.exhibition = exhibition;
 	}
@@ -94,6 +97,7 @@ public class Ticket implements Serializable {
 		return chairNumber;
 	}
 
+	//@ ensures this.chairNumber == chairNumber;
 	public void setChairNumber(String chairNumber) {
 		this.chairNumber = chairNumber;
 	}
@@ -102,6 +106,7 @@ public class Ticket implements Serializable {
 		return this.user;
 	}
 
+	//@ ensures this.user == user;
 	public void setUser(User user) {
 		this.user = user;
 	}
@@ -110,6 +115,7 @@ public class Ticket implements Serializable {
 		return purchaseLocation;
 	}
 
+	//@ ensures this.purchaseLocation == purchaseLocation;
 	public void setPurchaseLocation(PurchaseLocation purchaseLocation) {
 		this.purchaseLocation = purchaseLocation;
 	}
@@ -118,6 +124,7 @@ public class Ticket implements Serializable {
 		return this.createdAt;
 	}
 
+	//@ ensures this.createdAt == createdAt;
 	public void setCreatedAt(Date createdAt) {
 		this.createdAt = createdAt;
 	}

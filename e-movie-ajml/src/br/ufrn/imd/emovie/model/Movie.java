@@ -60,6 +60,7 @@ public class Movie implements Serializable {
 		return this.id;
 	}
 
+	//@ ensures this.id == id;
 	public void setId(Integer id) {
 		this.id = id;
 	}
@@ -68,6 +69,7 @@ public class Movie implements Serializable {
 		return this.name;
 	}
 
+	//@ ensures this.name == name;
 	public void setName(String name) {
 		this.name = name;
 	}
@@ -80,6 +82,7 @@ public class Movie implements Serializable {
 		return advertisement;
 	}
 
+	//@ ensures this.advertisement == advertisement;
 	public void setAdvertisement(String advertisement) {
 		this.advertisement = advertisement;
 	}
@@ -88,10 +91,12 @@ public class Movie implements Serializable {
 		return image;
 	}
 
+	//@ ensures this.image == image;
 	public void setImage(String image) {
 		this.image = image;
 	}
 
+	//@ ensures this.synopsis == synopsis;
 	public void setSynopsis(String synopsis) {
 		this.synopsis = synopsis;
 	}
@@ -100,6 +105,7 @@ public class Movie implements Serializable {
 		return endExhibition;
 	}
 
+	//@ ensures this.endExhibition == endExhibition;
 	public void setEndExhibition(Date endExhibition) {
 		this.endExhibition = endExhibition;
 	}
@@ -108,6 +114,7 @@ public class Movie implements Serializable {
 		return startExhibition;
 	}
 
+	//@ ensures this.startExhibition == startExhibition;
 	public void setStartExhibition(Date startExhibition) {
 		this.startExhibition = startExhibition;
 	}

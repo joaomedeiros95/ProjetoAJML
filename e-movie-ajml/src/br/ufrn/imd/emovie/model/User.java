@@ -52,6 +52,7 @@ public class User implements Serializable {
 		return this.id;
 	}
 
+	//@ ensures this.id == id;
 	public void setId(Integer id) {
 		this.id = id;
 	}
@@ -60,6 +61,7 @@ public class User implements Serializable {
 		return this.name;
 	}
 
+	//@ ensures this.name == name;
 	public void setName(String name) {
 		this.name = name;
 	}
@@ -68,6 +70,7 @@ public class User implements Serializable {
 		return this.password;
 	}
 
+	//@ ensures this.password == password;
 	public void setPassword(String password) {
 		this.password = password;
 	}
@@ -76,6 +79,7 @@ public class User implements Serializable {
 		return email;
 	}
 
+	//@ ensures this.email == email;
 	public void setEmail(String email) {
 		this.email = email;
 	}
@@ -84,6 +88,7 @@ public class User implements Serializable {
 		return this.createdAt;
 	}
 
+	//@ ensures this.createdAt == createdAt;
 	public void setCreatedAt(Date createdAt) {
 		this.createdAt = createdAt;
 	}
@@ -92,6 +97,7 @@ public class User implements Serializable {
 		return type;
 	}
 
+	//@ ensures this.type == type;
 	public void setType(UserType type) {
 		this.type = type;
 	}

@@ -44,6 +44,7 @@ public class Room implements Serializable {
 		return this.id;
 	}
 
+	//@ ensures this.id == id;
 	public void setId(Integer id) {
 		this.id = id;
 	}
@@ -52,6 +53,7 @@ public class Room implements Serializable {
 		return rows;
 	}
 
+	//@ ensures this.rows == rows;
 	public void setRows(int rows) {
 		this.rows = rows;
 	}

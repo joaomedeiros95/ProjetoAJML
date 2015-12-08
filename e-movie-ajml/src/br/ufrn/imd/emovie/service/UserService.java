@@ -14,11 +14,14 @@ public class UserService {
 	private /*@ spec_public nullable @*/ static UserService userService;
 	private /*@ spec_public nullable @*/ IDaoUser daoUser;
 	
-	
+	/*@ ensures this.daoUser != null;
+	 */
 	private UserService() {
 		this.daoUser = new DaoUser();
 	}
 	
+	/*@ ensures \result != null;
+	 */
 	public static UserService getInstance() {
 		if(userService == null) {
 			userService = new UserService();
@@ -27,35 +30,57 @@ public class UserService {
 		return userService;
 	}
 	
-	public User find(Integer id) throws DaoException {
+	/*@ assignable \nothing;
+	  @ ensures \result != null;
+	 */
+	public /*@ pure @*/ User find(Integer id) throws DaoException {
 		return daoUser.getById(id);
 	}
 	
-	public List<User> listAll() throws DaoException {
+	/*@ assignable \nothing;
+	 */
+	public /*@ pure @*/ List<User> listAll() throws DaoException {
 		return daoUser.getAll();
 	}
 	
-	public void create(User user) throws ServiceException, DaoException {
+	/*@ assignable \nothing;
+	  @ ensures user == \old(user);
+	 */
+	public /*@ pure @*/ void create(User user) throws ServiceException, DaoException {
 		daoUser.create(user);
 	}
 	
-	public void update(User user) throws ServiceException, DaoException {
+	/*@ assignable \nothing;
+	  @ ensures user == \old(user);
+	 */
+	public /*@ pure @*/ void update(User user) throws ServiceException, DaoException {
 		daoUser.update(user);
 	}
 	
-	public void delete(User user) throws DaoException {
+	/*@ assignable \nothing;
+	  @ ensures user == \old(user);
+	 */
+	public /*@ pure @*/ void delete(User user) throws DaoException {
 		daoUser.delete(user);
 	}
 	
-	public void delete(Integer id) throws DaoException {
+	/*@ assignable \nothing;
+	 */
+	public /*@ pure @*/ void delete(Integer id) throws DaoException {
 		daoUser.delete(id);
 	}
 	
-	public User checkLogin(User user) throws DaoException {
+	/*@ assignable \nothing;
+	  @ ensures user == \old(user);
+	 */
+	public /*@ pure @*/ User checkLogin(User user) throws DaoException {
 		return daoUser.checkLogin(user);
 	}
 	
-	public String generatePassword() {
+	/*@ assignable \nothing;
+	  @ ensures \result != null;
+	 */
+	public /*@ pure @*/ String generatePassword() {
 		char[] chars = "abcdefghijklmnopqrstuvwxyz1234567890".toCharArray();
 		StringBuilder sb = new StringBuilder();
 		Random random = new Random();

@@ -81,3 +81,19 @@
 2015-12-07 18:58:52 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
 2015-12-07 18:58:52 WARN  EntityManagerFactoryRegistry:63 - HHH000436: Entity manager factory name (e-movie) is already registered.  If entity manager will be clustered or passivated, specify a unique value for property 'hibernate.ejb.entitymanager_factory_name'
 2015-12-07 18:58:52 INFO  Server:37 - Servidor iniciado na porta 8000
+2015-12-08 15:17:55 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2015-12-08 15:17:57 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2015-12-08 15:17:58 WARN  EntityManagerFactoryRegistry:63 - HHH000436: Entity manager factory name (e-movie) is already registered.  If entity manager will be clustered or passivated, specify a unique value for property 'hibernate.ejb.entitymanager_factory_name'
+2015-12-08 15:17:58 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2015-12-08 15:17:58 WARN  EntityManagerFactoryRegistry:63 - HHH000436: Entity manager factory name (e-movie) is already registered.  If entity manager will be clustered or passivated, specify a unique value for property 'hibernate.ejb.entitymanager_factory_name'
+2015-12-08 15:17:58 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2015-12-08 15:17:59 WARN  EntityManagerFactoryRegistry:63 - HHH000436: Entity manager factory name (e-movie) is already registered.  If entity manager will be clustered or passivated, specify a unique value for property 'hibernate.ejb.entitymanager_factory_name'
+2015-12-08 15:17:59 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2015-12-08 15:17:59 WARN  EntityManagerFactoryRegistry:63 - HHH000436: Entity manager factory name (e-movie) is already registered.  If entity manager will be clustered or passivated, specify a unique value for property 'hibernate.ejb.entitymanager_factory_name'
+2015-12-08 15:17:59 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2015-12-08 15:18:00 WARN  EntityManagerFactoryRegistry:63 - HHH000436: Entity manager factory name (e-movie) is already registered.  If entity manager will be clustered or passivated, specify a unique value for property 'hibernate.ejb.entitymanager_factory_name'
+2015-12-08 15:18:00 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2015-12-08 15:18:00 WARN  EntityManagerFactoryRegistry:63 - HHH000436: Entity manager factory name (e-movie) is already registered.  If entity manager will be clustered or passivated, specify a unique value for property 'hibernate.ejb.entitymanager_factory_name'
+2015-12-08 15:18:01 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2015-12-08 15:18:01 WARN  EntityManagerFactoryRegistry:63 - HHH000436: Entity manager factory name (e-movie) is already registered.  If entity manager will be clustered or passivated, specify a unique value for property 'hibernate.ejb.entitymanager_factory_name'
+2015-12-08 15:18:01 INFO  Server:37 - Servidor iniciado na porta 8000
