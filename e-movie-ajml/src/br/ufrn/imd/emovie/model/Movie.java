@@ -41,6 +41,10 @@ public class Movie implements Serializable {
 		super();
 	}
 
+	/*@ requires name != "" && synopsis != "" && advertisement != "" && image != "";
+	  @ ensures this.name == name && this.synopsis == synopsis && this.advertisement == advertisement && this.image == image;
+	  @ assignable name;
+	 */
 	public Movie(String name, String synopsis, String advertisement, String image, Date startExhibition, Date endExhibition) {
 		this();
 		this.name = name;

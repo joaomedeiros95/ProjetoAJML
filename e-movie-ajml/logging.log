@@ -430,3 +430,474 @@
 2015-12-09 03:44:58 INFO  RequestHandler:56 - Processing request #2: POST /exhibitions
 2015-12-09 03:45:05 INFO  RequestHandler:56 - Processing request #3: POST /exhibitions
 2015-12-09 03:45:10 INFO  RequestHandler:56 - Processing request #4: POST /exhibitions
+2015-12-09 10:39:19 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2015-12-09 10:39:20 WARN  SessionFactoryBuilderImpl:648 - Unrecognized hbm2ddl_auto value : none.  Supported values include create, create-drop, update, and validate.  Ignoring
+2015-12-09 10:39:20 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2015-12-09 10:39:21 WARN  SessionFactoryBuilderImpl:648 - Unrecognized hbm2ddl_auto value : none.  Supported values include create, create-drop, update, and validate.  Ignoring
+2015-12-09 10:39:21 WARN  EntityManagerFactoryRegistry:63 - HHH000436: Entity manager factory name (e-movie) is already registered.  If entity manager will be clustered or passivated, specify a unique value for property 'hibernate.ejb.entitymanager_factory_name'
+2015-12-09 10:39:21 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2015-12-09 10:39:21 WARN  SessionFactoryBuilderImpl:648 - Unrecognized hbm2ddl_auto value : none.  Supported values include create, create-drop, update, and validate.  Ignoring
+2015-12-09 10:39:21 WARN  EntityManagerFactoryRegistry:63 - HHH000436: Entity manager factory name (e-movie) is already registered.  If entity manager will be clustered or passivated, specify a unique value for property 'hibernate.ejb.entitymanager_factory_name'
+2015-12-09 10:39:21 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2015-12-09 10:39:21 WARN  SessionFactoryBuilderImpl:648 - Unrecognized hbm2ddl_auto value : none.  Supported values include create, create-drop, update, and validate.  Ignoring
+2015-12-09 10:39:21 WARN  EntityManagerFactoryRegistry:63 - HHH000436: Entity manager factory name (e-movie) is already registered.  If entity manager will be clustered or passivated, specify a unique value for property 'hibernate.ejb.entitymanager_factory_name'
+2015-12-09 10:39:21 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2015-12-09 10:39:22 WARN  SessionFactoryBuilderImpl:648 - Unrecognized hbm2ddl_auto value : none.  Supported values include create, create-drop, update, and validate.  Ignoring
+2015-12-09 10:39:22 WARN  EntityManagerFactoryRegistry:63 - HHH000436: Entity manager factory name (e-movie) is already registered.  If entity manager will be clustered or passivated, specify a unique value for property 'hibernate.ejb.entitymanager_factory_name'
+2015-12-09 10:39:22 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2015-12-09 10:39:22 WARN  SessionFactoryBuilderImpl:648 - Unrecognized hbm2ddl_auto value : none.  Supported values include create, create-drop, update, and validate.  Ignoring
+2015-12-09 10:39:22 WARN  EntityManagerFactoryRegistry:63 - HHH000436: Entity manager factory name (e-movie) is already registered.  If entity manager will be clustered or passivated, specify a unique value for property 'hibernate.ejb.entitymanager_factory_name'
+2015-12-09 10:39:22 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2015-12-09 10:39:22 WARN  SessionFactoryBuilderImpl:648 - Unrecognized hbm2ddl_auto value : none.  Supported values include create, create-drop, update, and validate.  Ignoring
+2015-12-09 10:39:22 WARN  EntityManagerFactoryRegistry:63 - HHH000436: Entity manager factory name (e-movie) is already registered.  If entity manager will be clustered or passivated, specify a unique value for property 'hibernate.ejb.entitymanager_factory_name'
+2015-12-09 10:39:22 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2015-12-09 10:39:23 WARN  SessionFactoryBuilderImpl:648 - Unrecognized hbm2ddl_auto value : none.  Supported values include create, create-drop, update, and validate.  Ignoring
+2015-12-09 10:39:23 WARN  EntityManagerFactoryRegistry:63 - HHH000436: Entity manager factory name (e-movie) is already registered.  If entity manager will be clustered or passivated, specify a unique value for property 'hibernate.ejb.entitymanager_factory_name'
+2015-12-09 10:39:23 INFO  Server:37 - Servidor iniciado na porta 8000
+2015-12-09 10:40:30 INFO  RequestHandler:56 - Processing request #1: GET /movies
+2015-12-09 10:40:49 INFO  RequestHandler:56 - Processing request #2: GET /movies/1
+2015-12-09 10:40:49 INFO  RequestHandler:56 - Processing request #3: GET /exhibitions
+2015-12-09 10:40:56 INFO  RequestHandler:56 - Processing request #4: GET /chairs
+2015-12-09 10:40:56 INFO  RequestHandler:56 - Processing request #5: GET /chairs
+2015-12-09 10:40:56 INFO  RequestHandler:56 - Processing request #6: GET /exhibitions/7
+2015-12-09 10:40:56 INFO  RequestHandler:56 - Processing request #7: GET /chairs
+2015-12-09 10:40:58 INFO  RequestHandler:56 - Processing request #8: GET /chairs
+2015-12-09 10:41:00 INFO  RequestHandler:56 - Processing request #9: GET /chairs
+2015-12-09 10:41:02 INFO  RequestHandler:56 - Processing request #10: GET /chairs
+2015-12-09 10:41:04 INFO  RequestHandler:56 - Processing request #11: GET /chairs
+2015-12-09 10:41:04 INFO  RequestHandler:56 - Processing request #12: GET /exhibitions/7
+2015-12-09 10:45:00 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2015-12-09 10:45:01 WARN  SessionFactoryBuilderImpl:648 - Unrecognized hbm2ddl_auto value : none.  Supported values include create, create-drop, update, and validate.  Ignoring
+2015-12-09 10:45:01 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2015-12-09 10:45:02 WARN  SessionFactoryBuilderImpl:648 - Unrecognized hbm2ddl_auto value : none.  Supported values include create, create-drop, update, and validate.  Ignoring
+2015-12-09 10:45:02 WARN  EntityManagerFactoryRegistry:63 - HHH000436: Entity manager factory name (e-movie) is already registered.  If entity manager will be clustered or passivated, specify a unique value for property 'hibernate.ejb.entitymanager_factory_name'
+2015-12-09 10:45:02 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2015-12-09 10:45:02 WARN  SessionFactoryBuilderImpl:648 - Unrecognized hbm2ddl_auto value : none.  Supported values include create, create-drop, update, and validate.  Ignoring
+2015-12-09 10:45:02 WARN  EntityManagerFactoryRegistry:63 - HHH000436: Entity manager factory name (e-movie) is already registered.  If entity manager will be clustered or passivated, specify a unique value for property 'hibernate.ejb.entitymanager_factory_name'
+2015-12-09 10:45:02 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2015-12-09 10:45:02 WARN  SessionFactoryBuilderImpl:648 - Unrecognized hbm2ddl_auto value : none.  Supported values include create, create-drop, update, and validate.  Ignoring
+2015-12-09 10:45:02 WARN  EntityManagerFactoryRegistry:63 - HHH000436: Entity manager factory name (e-movie) is already registered.  If entity manager will be clustered or passivated, specify a unique value for property 'hibernate.ejb.entitymanager_factory_name'
+2015-12-09 10:45:03 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2015-12-09 10:45:03 WARN  SessionFactoryBuilderImpl:648 - Unrecognized hbm2ddl_auto value : none.  Supported values include create, create-drop, update, and validate.  Ignoring
+2015-12-09 10:45:03 WARN  EntityManagerFactoryRegistry:63 - HHH000436: Entity manager factory name (e-movie) is already registered.  If entity manager will be clustered or passivated, specify a unique value for property 'hibernate.ejb.entitymanager_factory_name'
+2015-12-09 10:45:03 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2015-12-09 10:45:03 WARN  SessionFactoryBuilderImpl:648 - Unrecognized hbm2ddl_auto value : none.  Supported values include create, create-drop, update, and validate.  Ignoring
+2015-12-09 10:45:03 WARN  EntityManagerFactoryRegistry:63 - HHH000436: Entity manager factory name (e-movie) is already registered.  If entity manager will be clustered or passivated, specify a unique value for property 'hibernate.ejb.entitymanager_factory_name'
+2015-12-09 10:45:03 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2015-12-09 10:45:03 WARN  SessionFactoryBuilderImpl:648 - Unrecognized hbm2ddl_auto value : none.  Supported values include create, create-drop, update, and validate.  Ignoring
+2015-12-09 10:45:03 WARN  EntityManagerFactoryRegistry:63 - HHH000436: Entity manager factory name (e-movie) is already registered.  If entity manager will be clustered or passivated, specify a unique value for property 'hibernate.ejb.entitymanager_factory_name'
+2015-12-09 10:45:03 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2015-12-09 10:45:04 WARN  SessionFactoryBuilderImpl:648 - Unrecognized hbm2ddl_auto value : none.  Supported values include create, create-drop, update, and validate.  Ignoring
+2015-12-09 10:45:04 WARN  EntityManagerFactoryRegistry:63 - HHH000436: Entity manager factory name (e-movie) is already registered.  If entity manager will be clustered or passivated, specify a unique value for property 'hibernate.ejb.entitymanager_factory_name'
+2015-12-09 10:45:04 INFO  Server:37 - Servidor iniciado na porta 8000
+2015-12-09 10:45:11 INFO  RequestHandler:56 - Processing request #1: GET /movies
+2015-12-09 10:46:14 INFO  RequestHandler:56 - Processing request #2: POST /movies
+2015-12-09 10:46:14 ERROR ServiceExecutorTemplate:116 - 
+2015-12-09 10:46:39 INFO  RequestHandler:56 - Processing request #3: POST /movies
+2015-12-09 10:46:48 INFO  RequestHandler:56 - Processing request #4: GET /movies
+2015-12-09 10:47:00 INFO  RequestHandler:56 - Processing request #5: GET /movies/9
+2015-12-09 10:47:00 INFO  RequestHandler:56 - Processing request #6: GET /exhibitions
+2015-12-09 10:47:04 INFO  RequestHandler:56 - Processing request #7: GET /movies/1
+2015-12-09 10:47:04 INFO  RequestHandler:56 - Processing request #8: GET /exhibitions
+2015-12-09 10:47:06 INFO  RequestHandler:56 - Processing request #9: GET /chairs
+2015-12-09 10:47:06 INFO  RequestHandler:56 - Processing request #10: GET /chairs
+2015-12-09 10:47:06 INFO  RequestHandler:56 - Processing request #11: GET /exhibitions/7
+2015-12-09 10:47:06 INFO  RequestHandler:56 - Processing request #12: GET /chairs
+2015-12-09 10:47:09 INFO  RequestHandler:56 - Processing request #13: GET /chairs
+2015-12-09 10:47:12 INFO  RequestHandler:56 - Processing request #14: GET /chairs
+2015-12-09 10:47:14 INFO  RequestHandler:56 - Processing request #15: GET /chairs
+2015-12-09 10:47:16 INFO  RequestHandler:56 - Processing request #16: GET /chairs
+2015-12-09 10:47:18 INFO  RequestHandler:56 - Processing request #17: GET /chairs
+2015-12-09 10:47:20 INFO  RequestHandler:56 - Processing request #18: GET /chairs
+2015-12-09 10:47:22 INFO  RequestHandler:56 - Processing request #19: GET /chairs
+2015-12-09 10:47:24 INFO  RequestHandler:56 - Processing request #20: GET /chairs
+2015-12-09 10:47:26 INFO  RequestHandler:56 - Processing request #21: GET /chairs
+2015-12-09 10:47:28 INFO  RequestHandler:56 - Processing request #22: GET /chairs
+2015-12-09 10:47:30 INFO  RequestHandler:56 - Processing request #23: GET /chairs
+2015-12-09 10:47:32 INFO  RequestHandler:56 - Processing request #24: GET /chairs
+2015-12-09 10:47:34 INFO  RequestHandler:56 - Processing request #25: GET /chairs
+2015-12-09 10:47:36 INFO  RequestHandler:56 - Processing request #26: GET /chairs
+2015-12-09 10:47:38 INFO  RequestHandler:56 - Processing request #27: GET /chairs
+2015-12-09 10:47:40 INFO  RequestHandler:56 - Processing request #28: GET /chairs
+2015-12-09 10:47:42 INFO  RequestHandler:56 - Processing request #29: GET /chairs
+2015-12-09 10:47:44 INFO  RequestHandler:56 - Processing request #30: GET /chairs
+2015-12-09 10:47:46 INFO  RequestHandler:56 - Processing request #31: GET /chairs
+2015-12-09 10:47:48 INFO  RequestHandler:56 - Processing request #32: GET /chairs
+2015-12-09 10:47:50 INFO  RequestHandler:56 - Processing request #33: GET /chairs
+2015-12-09 10:47:52 INFO  RequestHandler:56 - Processing request #34: GET /chairs
+2015-12-09 10:47:54 INFO  RequestHandler:56 - Processing request #35: GET /chairs
+2015-12-09 10:47:56 INFO  RequestHandler:56 - Processing request #36: GET /chairs
+2015-12-09 10:47:58 INFO  RequestHandler:56 - Processing request #37: GET /chairs
+2015-12-09 10:48:00 INFO  RequestHandler:56 - Processing request #38: GET /chairs
+2015-12-09 10:48:02 INFO  RequestHandler:56 - Processing request #39: GET /chairs
+2015-12-09 10:48:04 INFO  RequestHandler:56 - Processing request #40: GET /chairs
+2015-12-09 10:48:06 INFO  RequestHandler:56 - Processing request #41: GET /chairs
+2015-12-09 10:48:08 INFO  RequestHandler:56 - Processing request #42: GET /chairs
+2015-12-09 10:48:10 INFO  RequestHandler:56 - Processing request #43: GET /chairs
+2015-12-09 10:48:12 INFO  RequestHandler:56 - Processing request #44: GET /chairs
+2015-12-09 10:48:14 INFO  RequestHandler:56 - Processing request #45: GET /chairs
+2015-12-09 10:48:16 INFO  RequestHandler:56 - Processing request #46: GET /chairs
+2015-12-09 10:48:18 INFO  RequestHandler:56 - Processing request #47: GET /chairs
+2015-12-09 10:48:20 INFO  RequestHandler:56 - Processing request #48: GET /chairs
+2015-12-09 10:48:22 INFO  RequestHandler:56 - Processing request #49: GET /chairs
+2015-12-09 10:48:24 INFO  RequestHandler:56 - Processing request #50: GET /chairs
+2015-12-09 10:48:26 INFO  RequestHandler:56 - Processing request #51: GET /chairs
+2015-12-09 10:48:28 INFO  RequestHandler:56 - Processing request #52: GET /chairs
+2015-12-09 10:48:30 INFO  RequestHandler:56 - Processing request #53: GET /chairs
+2015-12-09 10:48:32 INFO  RequestHandler:56 - Processing request #54: GET /chairs
+2015-12-09 10:48:34 INFO  RequestHandler:56 - Processing request #55: GET /chairs
+2015-12-09 10:48:36 INFO  RequestHandler:56 - Processing request #56: GET /chairs
+2015-12-09 10:48:38 INFO  RequestHandler:56 - Processing request #57: GET /chairs
+2015-12-09 10:48:40 INFO  RequestHandler:56 - Processing request #58: GET /chairs
+2015-12-09 10:48:42 INFO  RequestHandler:56 - Processing request #59: GET /chairs
+2015-12-09 10:48:44 INFO  RequestHandler:56 - Processing request #60: GET /chairs
+2015-12-09 10:48:46 INFO  RequestHandler:56 - Processing request #61: GET /chairs
+2015-12-09 10:48:48 INFO  RequestHandler:56 - Processing request #62: GET /chairs
+2015-12-09 10:48:50 INFO  RequestHandler:56 - Processing request #63: GET /chairs
+2015-12-09 10:48:52 INFO  RequestHandler:56 - Processing request #64: GET /chairs
+2015-12-09 10:48:54 INFO  RequestHandler:56 - Processing request #65: GET /chairs
+2015-12-09 10:48:56 INFO  RequestHandler:56 - Processing request #66: GET /chairs
+2015-12-09 10:48:58 INFO  RequestHandler:56 - Processing request #67: GET /chairs
+2015-12-09 10:49:00 INFO  RequestHandler:56 - Processing request #68: GET /chairs
+2015-12-09 10:49:02 INFO  RequestHandler:56 - Processing request #69: GET /chairs
+2015-12-09 10:49:04 INFO  RequestHandler:56 - Processing request #70: GET /chairs
+2015-12-09 10:49:06 INFO  RequestHandler:56 - Processing request #71: GET /chairs
+2015-12-09 10:49:08 INFO  RequestHandler:56 - Processing request #72: GET /chairs
+2015-12-09 10:49:10 INFO  RequestHandler:56 - Processing request #73: GET /chairs
+2015-12-09 10:49:12 INFO  RequestHandler:56 - Processing request #74: GET /chairs
+2015-12-09 10:49:14 INFO  RequestHandler:56 - Processing request #75: GET /chairs
+2015-12-09 10:49:16 INFO  RequestHandler:56 - Processing request #76: GET /chairs
+2015-12-09 10:49:18 INFO  RequestHandler:56 - Processing request #77: GET /chairs
+2015-12-09 10:49:20 INFO  RequestHandler:56 - Processing request #78: GET /chairs
+2015-12-09 10:49:22 INFO  RequestHandler:56 - Processing request #79: GET /chairs
+2015-12-09 10:49:24 INFO  RequestHandler:56 - Processing request #80: GET /chairs
+2015-12-09 10:49:26 INFO  RequestHandler:56 - Processing request #81: GET /chairs
+2015-12-09 10:49:28 INFO  RequestHandler:56 - Processing request #82: GET /chairs
+2015-12-09 10:49:30 INFO  RequestHandler:56 - Processing request #83: GET /chairs
+2015-12-09 10:49:32 INFO  RequestHandler:56 - Processing request #84: GET /chairs
+2015-12-09 10:49:34 INFO  RequestHandler:56 - Processing request #85: GET /chairs
+2015-12-09 10:49:36 INFO  RequestHandler:56 - Processing request #86: GET /chairs
+2015-12-09 10:49:38 INFO  RequestHandler:56 - Processing request #87: GET /chairs
+2015-12-09 10:49:40 INFO  RequestHandler:56 - Processing request #88: GET /chairs
+2015-12-09 10:49:42 INFO  RequestHandler:56 - Processing request #89: GET /chairs
+2015-12-09 10:49:44 INFO  RequestHandler:56 - Processing request #90: GET /chairs
+2015-12-09 10:49:46 INFO  RequestHandler:56 - Processing request #91: GET /chairs
+2015-12-09 10:49:48 INFO  RequestHandler:56 - Processing request #92: GET /chairs
+2015-12-09 10:49:50 INFO  RequestHandler:56 - Processing request #93: GET /chairs
+2015-12-09 10:49:52 INFO  RequestHandler:56 - Processing request #94: GET /chairs
+2015-12-09 10:49:54 INFO  RequestHandler:56 - Processing request #95: GET /chairs
+2015-12-09 10:49:56 INFO  RequestHandler:56 - Processing request #96: GET /chairs
+2015-12-09 10:49:58 INFO  RequestHandler:56 - Processing request #97: GET /chairs
+2015-12-09 10:50:00 INFO  RequestHandler:56 - Processing request #98: GET /chairs
+2015-12-09 10:50:02 INFO  RequestHandler:56 - Processing request #99: GET /chairs
+2015-12-09 10:50:04 INFO  RequestHandler:56 - Processing request #100: GET /chairs
+2015-12-09 10:50:06 INFO  RequestHandler:56 - Processing request #101: GET /chairs
+2015-12-09 10:50:08 INFO  RequestHandler:56 - Processing request #102: GET /chairs
+2015-12-09 10:50:10 INFO  RequestHandler:56 - Processing request #103: GET /chairs
+2015-12-09 10:50:12 INFO  RequestHandler:56 - Processing request #104: GET /chairs
+2015-12-09 10:50:14 INFO  RequestHandler:56 - Processing request #105: GET /chairs
+2015-12-09 10:50:16 INFO  RequestHandler:56 - Processing request #106: GET /chairs
+2015-12-09 10:50:18 INFO  RequestHandler:56 - Processing request #107: GET /chairs
+2015-12-09 10:50:20 INFO  RequestHandler:56 - Processing request #108: GET /chairs
+2015-12-09 10:50:22 INFO  RequestHandler:56 - Processing request #109: GET /chairs
+2015-12-09 10:50:24 INFO  RequestHandler:56 - Processing request #110: GET /chairs
+2015-12-09 10:50:26 INFO  RequestHandler:56 - Processing request #111: GET /chairs
+2015-12-09 10:50:28 INFO  RequestHandler:56 - Processing request #112: GET /chairs
+2015-12-09 10:50:30 INFO  RequestHandler:56 - Processing request #113: GET /chairs
+2015-12-09 10:50:32 INFO  RequestHandler:56 - Processing request #114: GET /chairs
+2015-12-09 10:50:34 INFO  RequestHandler:56 - Processing request #115: GET /chairs
+2015-12-09 10:50:36 INFO  RequestHandler:56 - Processing request #116: GET /chairs
+2015-12-09 10:50:38 INFO  RequestHandler:56 - Processing request #117: GET /chairs
+2015-12-09 10:50:40 INFO  RequestHandler:56 - Processing request #118: GET /chairs
+2015-12-09 10:50:42 INFO  RequestHandler:56 - Processing request #119: GET /chairs
+2015-12-09 10:50:44 INFO  RequestHandler:56 - Processing request #120: GET /chairs
+2015-12-09 10:50:46 INFO  RequestHandler:56 - Processing request #121: GET /chairs
+2015-12-09 10:50:48 INFO  RequestHandler:56 - Processing request #122: GET /chairs
+2015-12-09 10:50:50 INFO  RequestHandler:56 - Processing request #123: GET /chairs
+2015-12-09 10:50:52 INFO  RequestHandler:56 - Processing request #124: GET /chairs
+2015-12-09 10:50:54 INFO  RequestHandler:56 - Processing request #125: GET /chairs
+2015-12-09 10:50:56 INFO  RequestHandler:56 - Processing request #126: GET /chairs
+2015-12-09 10:50:58 INFO  RequestHandler:56 - Processing request #127: GET /chairs
+2015-12-09 10:51:00 INFO  RequestHandler:56 - Processing request #128: GET /chairs
+2015-12-09 10:51:02 INFO  RequestHandler:56 - Processing request #129: GET /chairs
+2015-12-09 10:51:04 INFO  RequestHandler:56 - Processing request #130: GET /chairs
+2015-12-09 10:51:06 INFO  RequestHandler:56 - Processing request #131: GET /chairs
+2015-12-09 10:51:08 INFO  RequestHandler:56 - Processing request #132: GET /chairs
+2015-12-09 10:51:10 INFO  RequestHandler:56 - Processing request #133: GET /chairs
+2015-12-09 10:51:12 INFO  RequestHandler:56 - Processing request #134: GET /chairs
+2015-12-09 10:51:14 INFO  RequestHandler:56 - Processing request #135: GET /chairs
+2015-12-09 10:51:16 INFO  RequestHandler:56 - Processing request #136: GET /chairs
+2015-12-09 10:51:18 INFO  RequestHandler:56 - Processing request #137: GET /chairs
+2015-12-09 10:51:20 INFO  RequestHandler:56 - Processing request #138: GET /chairs
+2015-12-09 10:51:22 INFO  RequestHandler:56 - Processing request #139: GET /chairs
+2015-12-09 10:51:24 INFO  RequestHandler:56 - Processing request #140: GET /chairs
+2015-12-09 10:51:26 INFO  RequestHandler:56 - Processing request #141: GET /chairs
+2015-12-09 10:51:28 INFO  RequestHandler:56 - Processing request #142: GET /chairs
+2015-12-09 10:51:30 INFO  RequestHandler:56 - Processing request #143: GET /chairs
+2015-12-09 10:51:32 INFO  RequestHandler:56 - Processing request #144: GET /chairs
+2015-12-09 10:51:34 INFO  RequestHandler:56 - Processing request #145: GET /chairs
+2015-12-09 10:51:36 INFO  RequestHandler:56 - Processing request #146: GET /chairs
+2015-12-09 10:51:38 INFO  RequestHandler:56 - Processing request #147: GET /chairs
+2015-12-09 10:51:40 INFO  RequestHandler:56 - Processing request #148: GET /chairs
+2015-12-09 10:51:42 INFO  RequestHandler:56 - Processing request #149: GET /chairs
+2015-12-09 10:51:44 INFO  RequestHandler:56 - Processing request #150: GET /chairs
+2015-12-09 10:51:46 INFO  RequestHandler:56 - Processing request #151: GET /chairs
+2015-12-09 10:51:48 INFO  RequestHandler:56 - Processing request #152: GET /chairs
+2015-12-09 10:51:50 INFO  RequestHandler:56 - Processing request #153: GET /chairs
+2015-12-09 10:51:52 INFO  RequestHandler:56 - Processing request #154: GET /chairs
+2015-12-09 10:51:54 INFO  RequestHandler:56 - Processing request #155: GET /chairs
+2015-12-09 10:51:56 INFO  RequestHandler:56 - Processing request #156: GET /chairs
+2015-12-09 10:51:58 INFO  RequestHandler:56 - Processing request #157: GET /chairs
+2015-12-09 10:52:00 INFO  RequestHandler:56 - Processing request #158: GET /chairs
+2015-12-09 10:52:02 INFO  RequestHandler:56 - Processing request #159: GET /chairs
+2015-12-09 10:52:04 INFO  RequestHandler:56 - Processing request #160: GET /chairs
+2015-12-09 10:52:06 INFO  RequestHandler:56 - Processing request #161: GET /chairs
+2015-12-09 10:52:08 INFO  RequestHandler:56 - Processing request #162: GET /chairs
+2015-12-09 10:52:10 INFO  RequestHandler:56 - Processing request #163: GET /chairs
+2015-12-09 10:52:12 INFO  RequestHandler:56 - Processing request #164: GET /chairs
+2015-12-09 10:52:14 INFO  RequestHandler:56 - Processing request #165: GET /chairs
+2015-12-09 10:52:16 INFO  RequestHandler:56 - Processing request #166: GET /chairs
+2015-12-09 10:52:18 INFO  RequestHandler:56 - Processing request #167: GET /chairs
+2015-12-09 10:52:20 INFO  RequestHandler:56 - Processing request #168: GET /chairs
+2015-12-09 10:52:22 INFO  RequestHandler:56 - Processing request #169: GET /chairs
+2015-12-09 10:52:24 INFO  RequestHandler:56 - Processing request #170: GET /chairs
+2015-12-09 10:52:26 INFO  RequestHandler:56 - Processing request #171: GET /chairs
+2015-12-09 10:52:28 INFO  RequestHandler:56 - Processing request #172: GET /chairs
+2015-12-09 10:52:30 INFO  RequestHandler:56 - Processing request #173: GET /chairs
+2015-12-09 10:52:32 INFO  RequestHandler:56 - Processing request #174: GET /chairs
+2015-12-09 10:52:34 INFO  RequestHandler:56 - Processing request #175: GET /chairs
+2015-12-09 10:52:36 INFO  RequestHandler:56 - Processing request #176: GET /chairs
+2015-12-09 10:52:38 INFO  RequestHandler:56 - Processing request #177: GET /chairs
+2015-12-09 10:52:40 INFO  RequestHandler:56 - Processing request #178: GET /chairs
+2015-12-09 10:52:42 INFO  RequestHandler:56 - Processing request #179: GET /chairs
+2015-12-09 10:52:44 INFO  RequestHandler:56 - Processing request #180: GET /chairs
+2015-12-09 10:52:46 INFO  RequestHandler:56 - Processing request #181: GET /chairs
+2015-12-09 10:52:48 INFO  RequestHandler:56 - Processing request #182: GET /chairs
+2015-12-09 10:52:50 INFO  RequestHandler:56 - Processing request #183: GET /chairs
+2015-12-09 10:52:52 INFO  RequestHandler:56 - Processing request #184: GET /chairs
+2015-12-09 10:52:54 INFO  RequestHandler:56 - Processing request #185: GET /chairs
+2015-12-09 10:52:56 INFO  RequestHandler:56 - Processing request #186: GET /chairs
+2015-12-09 10:52:58 INFO  RequestHandler:56 - Processing request #187: GET /chairs
+2015-12-09 10:53:00 INFO  RequestHandler:56 - Processing request #188: GET /chairs
+2015-12-09 10:53:02 INFO  RequestHandler:56 - Processing request #189: GET /chairs
+2015-12-09 10:53:04 INFO  RequestHandler:56 - Processing request #190: GET /chairs
+2015-12-09 10:53:06 INFO  RequestHandler:56 - Processing request #191: GET /chairs
+2015-12-09 10:53:08 INFO  RequestHandler:56 - Processing request #192: GET /chairs
+2015-12-09 10:53:10 INFO  RequestHandler:56 - Processing request #193: GET /chairs
+2015-12-09 10:53:12 INFO  RequestHandler:56 - Processing request #194: GET /chairs
+2015-12-09 10:53:14 INFO  RequestHandler:56 - Processing request #195: GET /chairs
+2015-12-09 10:53:16 INFO  RequestHandler:56 - Processing request #196: GET /chairs
+2015-12-09 10:53:18 INFO  RequestHandler:56 - Processing request #197: GET /chairs
+2015-12-09 10:53:20 INFO  RequestHandler:56 - Processing request #198: GET /chairs
+2015-12-09 10:53:22 INFO  RequestHandler:56 - Processing request #199: GET /chairs
+2015-12-09 10:53:24 INFO  RequestHandler:56 - Processing request #200: GET /chairs
+2015-12-09 10:53:26 INFO  RequestHandler:56 - Processing request #201: GET /chairs
+2015-12-09 10:53:28 INFO  RequestHandler:56 - Processing request #202: GET /chairs
+2015-12-09 10:53:30 INFO  RequestHandler:56 - Processing request #203: GET /chairs
+2015-12-09 10:53:32 INFO  RequestHandler:56 - Processing request #204: GET /chairs
+2015-12-09 10:53:34 INFO  RequestHandler:56 - Processing request #205: GET /chairs
+2015-12-09 10:53:36 INFO  RequestHandler:56 - Processing request #206: GET /chairs
+2015-12-09 10:53:38 INFO  RequestHandler:56 - Processing request #207: GET /chairs
+2015-12-09 10:53:40 INFO  RequestHandler:56 - Processing request #208: GET /chairs
+2015-12-09 10:53:42 INFO  RequestHandler:56 - Processing request #209: GET /chairs
+2015-12-09 10:53:44 INFO  RequestHandler:56 - Processing request #210: GET /chairs
+2015-12-09 10:53:46 INFO  RequestHandler:56 - Processing request #211: GET /chairs
+2015-12-09 10:53:48 INFO  RequestHandler:56 - Processing request #212: GET /chairs
+2015-12-09 10:53:50 INFO  RequestHandler:56 - Processing request #213: GET /chairs
+2015-12-09 10:53:52 INFO  RequestHandler:56 - Processing request #214: GET /chairs
+2015-12-09 10:53:54 INFO  RequestHandler:56 - Processing request #215: GET /chairs
+2015-12-09 10:53:56 INFO  RequestHandler:56 - Processing request #216: GET /chairs
+2015-12-09 10:53:58 INFO  RequestHandler:56 - Processing request #217: GET /chairs
+2015-12-09 10:54:00 INFO  RequestHandler:56 - Processing request #218: GET /chairs
+2015-12-09 10:54:02 INFO  RequestHandler:56 - Processing request #219: GET /chairs
+2015-12-09 10:54:04 INFO  RequestHandler:56 - Processing request #220: GET /chairs
+2015-12-09 10:54:06 INFO  RequestHandler:56 - Processing request #221: GET /chairs
+2015-12-09 10:54:08 INFO  RequestHandler:56 - Processing request #222: GET /chairs
+2015-12-09 10:54:10 INFO  RequestHandler:56 - Processing request #223: GET /chairs
+2015-12-09 10:54:12 INFO  RequestHandler:56 - Processing request #224: GET /chairs
+2015-12-09 10:54:14 INFO  RequestHandler:56 - Processing request #225: GET /chairs
+2015-12-09 10:54:16 INFO  RequestHandler:56 - Processing request #226: GET /chairs
+2015-12-09 10:54:18 INFO  RequestHandler:56 - Processing request #227: GET /chairs
+2015-12-09 10:54:20 INFO  RequestHandler:56 - Processing request #228: GET /chairs
+2015-12-09 10:54:22 INFO  RequestHandler:56 - Processing request #229: GET /chairs
+2015-12-09 10:54:24 INFO  RequestHandler:56 - Processing request #230: GET /chairs
+2015-12-09 10:54:26 INFO  RequestHandler:56 - Processing request #231: GET /chairs
+2015-12-09 10:54:28 INFO  RequestHandler:56 - Processing request #232: GET /chairs
+2015-12-09 10:54:30 INFO  RequestHandler:56 - Processing request #233: GET /chairs
+2015-12-09 10:54:32 INFO  RequestHandler:56 - Processing request #234: GET /chairs
+2015-12-09 10:54:34 INFO  RequestHandler:56 - Processing request #235: GET /chairs
+2015-12-09 10:54:36 INFO  RequestHandler:56 - Processing request #236: GET /chairs
+2015-12-09 10:54:38 INFO  RequestHandler:56 - Processing request #237: GET /chairs
+2015-12-09 10:54:40 INFO  RequestHandler:56 - Processing request #238: GET /chairs
+2015-12-09 10:54:42 INFO  RequestHandler:56 - Processing request #239: GET /chairs
+2015-12-09 10:54:44 INFO  RequestHandler:56 - Processing request #240: GET /chairs
+2015-12-09 10:54:46 INFO  RequestHandler:56 - Processing request #241: GET /chairs
+2015-12-09 10:54:48 INFO  RequestHandler:56 - Processing request #242: GET /chairs
+2015-12-09 10:54:50 INFO  RequestHandler:56 - Processing request #243: GET /chairs
+2015-12-09 10:54:52 INFO  RequestHandler:56 - Processing request #244: GET /chairs
+2015-12-09 10:54:54 INFO  RequestHandler:56 - Processing request #245: GET /chairs
+2015-12-09 10:54:56 INFO  RequestHandler:56 - Processing request #246: GET /chairs
+2015-12-09 10:54:58 INFO  RequestHandler:56 - Processing request #247: GET /chairs
+2015-12-09 10:55:00 INFO  RequestHandler:56 - Processing request #248: GET /chairs
+2015-12-09 10:55:02 INFO  RequestHandler:56 - Processing request #249: GET /chairs
+2015-12-09 10:55:04 INFO  RequestHandler:56 - Processing request #250: GET /chairs
+2015-12-09 10:55:06 INFO  RequestHandler:56 - Processing request #251: GET /chairs
+2015-12-09 10:55:08 INFO  RequestHandler:56 - Processing request #252: GET /chairs
+2015-12-09 10:55:10 INFO  RequestHandler:56 - Processing request #253: GET /chairs
+2015-12-09 10:55:12 INFO  RequestHandler:56 - Processing request #254: GET /chairs
+2015-12-09 10:55:14 INFO  RequestHandler:56 - Processing request #255: GET /chairs
+2015-12-09 10:55:16 INFO  RequestHandler:56 - Processing request #256: GET /chairs
+2015-12-09 10:55:18 INFO  RequestHandler:56 - Processing request #257: GET /chairs
+2015-12-09 10:55:20 INFO  RequestHandler:56 - Processing request #258: GET /chairs
+2015-12-09 10:55:22 INFO  RequestHandler:56 - Processing request #259: GET /chairs
+2015-12-09 10:55:24 INFO  RequestHandler:56 - Processing request #260: GET /chairs
+2015-12-09 10:55:26 INFO  RequestHandler:56 - Processing request #261: GET /chairs
+2015-12-09 10:55:27 INFO  RequestHandler:56 - Processing request #262: GET /chairs
+2015-12-09 11:29:44 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2015-12-09 11:29:45 WARN  SessionFactoryBuilderImpl:648 - Unrecognized hbm2ddl_auto value : none.  Supported values include create, create-drop, update, and validate.  Ignoring
+2015-12-09 11:29:46 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2015-12-09 11:29:46 WARN  SessionFactoryBuilderImpl:648 - Unrecognized hbm2ddl_auto value : none.  Supported values include create, create-drop, update, and validate.  Ignoring
+2015-12-09 11:29:46 WARN  EntityManagerFactoryRegistry:63 - HHH000436: Entity manager factory name (e-movie) is already registered.  If entity manager will be clustered or passivated, specify a unique value for property 'hibernate.ejb.entitymanager_factory_name'
+2015-12-09 11:29:46 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2015-12-09 11:29:46 WARN  SessionFactoryBuilderImpl:648 - Unrecognized hbm2ddl_auto value : none.  Supported values include create, create-drop, update, and validate.  Ignoring
+2015-12-09 11:29:46 WARN  EntityManagerFactoryRegistry:63 - HHH000436: Entity manager factory name (e-movie) is already registered.  If entity manager will be clustered or passivated, specify a unique value for property 'hibernate.ejb.entitymanager_factory_name'
+2015-12-09 11:29:46 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2015-12-09 11:29:47 WARN  SessionFactoryBuilderImpl:648 - Unrecognized hbm2ddl_auto value : none.  Supported values include create, create-drop, update, and validate.  Ignoring
+2015-12-09 11:29:47 WARN  EntityManagerFactoryRegistry:63 - HHH000436: Entity manager factory name (e-movie) is already registered.  If entity manager will be clustered or passivated, specify a unique value for property 'hibernate.ejb.entitymanager_factory_name'
+2015-12-09 11:29:47 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2015-12-09 11:29:47 WARN  SessionFactoryBuilderImpl:648 - Unrecognized hbm2ddl_auto value : none.  Supported values include create, create-drop, update, and validate.  Ignoring
+2015-12-09 11:29:47 WARN  EntityManagerFactoryRegistry:63 - HHH000436: Entity manager factory name (e-movie) is already registered.  If entity manager will be clustered or passivated, specify a unique value for property 'hibernate.ejb.entitymanager_factory_name'
+2015-12-09 11:29:47 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2015-12-09 11:29:47 WARN  SessionFactoryBuilderImpl:648 - Unrecognized hbm2ddl_auto value : none.  Supported values include create, create-drop, update, and validate.  Ignoring
+2015-12-09 11:29:47 WARN  EntityManagerFactoryRegistry:63 - HHH000436: Entity manager factory name (e-movie) is already registered.  If entity manager will be clustered or passivated, specify a unique value for property 'hibernate.ejb.entitymanager_factory_name'
+2015-12-09 11:29:47 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2015-12-09 11:29:48 WARN  SessionFactoryBuilderImpl:648 - Unrecognized hbm2ddl_auto value : none.  Supported values include create, create-drop, update, and validate.  Ignoring
+2015-12-09 11:29:48 WARN  EntityManagerFactoryRegistry:63 - HHH000436: Entity manager factory name (e-movie) is already registered.  If entity manager will be clustered or passivated, specify a unique value for property 'hibernate.ejb.entitymanager_factory_name'
+2015-12-09 11:29:48 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2015-12-09 11:29:48 WARN  SessionFactoryBuilderImpl:648 - Unrecognized hbm2ddl_auto value : none.  Supported values include create, create-drop, update, and validate.  Ignoring
+2015-12-09 11:29:48 WARN  EntityManagerFactoryRegistry:63 - HHH000436: Entity manager factory name (e-movie) is already registered.  If entity manager will be clustered or passivated, specify a unique value for property 'hibernate.ejb.entitymanager_factory_name'
+2015-12-09 11:29:48 INFO  Server:37 - Servidor iniciado na porta 8000
+2015-12-09 11:29:55 INFO  RequestHandler:56 - Processing request #1: GET /movies
+2015-12-09 11:29:57 INFO  RequestHandler:56 - Processing request #2: GET /movies/1
+2015-12-09 11:29:57 INFO  RequestHandler:56 - Processing request #3: GET /exhibitions
+2015-12-09 11:30:02 INFO  RequestHandler:56 - Processing request #4: GET /chairs
+2015-12-09 11:30:02 INFO  RequestHandler:56 - Processing request #5: GET /chairs
+2015-12-09 11:30:02 INFO  RequestHandler:56 - Processing request #6: GET /exhibitions/8
+2015-12-09 11:30:02 INFO  RequestHandler:56 - Processing request #7: GET /chairs
+2015-12-09 11:30:04 INFO  RequestHandler:56 - Processing request #8: GET /chairs
+2015-12-09 11:30:06 INFO  RequestHandler:56 - Processing request #9: GET /chairs
+2015-12-09 11:30:07 INFO  RequestHandler:56 - Processing request #10: GET /chairs
+2015-12-09 11:30:07 INFO  RequestHandler:56 - Processing request #11: GET /exhibitions/8
+2015-12-09 11:30:18 INFO  RequestHandler:56 - Processing request #12: POST /tickets
+2015-12-09 11:31:50 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2015-12-09 11:31:51 WARN  SessionFactoryBuilderImpl:648 - Unrecognized hbm2ddl_auto value : none.  Supported values include create, create-drop, update, and validate.  Ignoring
+2015-12-09 11:31:51 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2015-12-09 11:31:52 WARN  SessionFactoryBuilderImpl:648 - Unrecognized hbm2ddl_auto value : none.  Supported values include create, create-drop, update, and validate.  Ignoring
+2015-12-09 11:31:52 WARN  EntityManagerFactoryRegistry:63 - HHH000436: Entity manager factory name (e-movie) is already registered.  If entity manager will be clustered or passivated, specify a unique value for property 'hibernate.ejb.entitymanager_factory_name'
+2015-12-09 11:31:52 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2015-12-09 11:31:52 WARN  SessionFactoryBuilderImpl:648 - Unrecognized hbm2ddl_auto value : none.  Supported values include create, create-drop, update, and validate.  Ignoring
+2015-12-09 11:31:52 WARN  EntityManagerFactoryRegistry:63 - HHH000436: Entity manager factory name (e-movie) is already registered.  If entity manager will be clustered or passivated, specify a unique value for property 'hibernate.ejb.entitymanager_factory_name'
+2015-12-09 11:31:52 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2015-12-09 11:31:52 WARN  SessionFactoryBuilderImpl:648 - Unrecognized hbm2ddl_auto value : none.  Supported values include create, create-drop, update, and validate.  Ignoring
+2015-12-09 11:31:52 WARN  EntityManagerFactoryRegistry:63 - HHH000436: Entity manager factory name (e-movie) is already registered.  If entity manager will be clustered or passivated, specify a unique value for property 'hibernate.ejb.entitymanager_factory_name'
+2015-12-09 11:31:53 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2015-12-09 11:31:53 WARN  SessionFactoryBuilderImpl:648 - Unrecognized hbm2ddl_auto value : none.  Supported values include create, create-drop, update, and validate.  Ignoring
+2015-12-09 11:31:53 WARN  EntityManagerFactoryRegistry:63 - HHH000436: Entity manager factory name (e-movie) is already registered.  If entity manager will be clustered or passivated, specify a unique value for property 'hibernate.ejb.entitymanager_factory_name'
+2015-12-09 11:31:53 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2015-12-09 11:31:53 WARN  SessionFactoryBuilderImpl:648 - Unrecognized hbm2ddl_auto value : none.  Supported values include create, create-drop, update, and validate.  Ignoring
+2015-12-09 11:31:53 WARN  EntityManagerFactoryRegistry:63 - HHH000436: Entity manager factory name (e-movie) is already registered.  If entity manager will be clustered or passivated, specify a unique value for property 'hibernate.ejb.entitymanager_factory_name'
+2015-12-09 11:31:53 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2015-12-09 11:31:53 WARN  SessionFactoryBuilderImpl:648 - Unrecognized hbm2ddl_auto value : none.  Supported values include create, create-drop, update, and validate.  Ignoring
+2015-12-09 11:31:54 WARN  EntityManagerFactoryRegistry:63 - HHH000436: Entity manager factory name (e-movie) is already registered.  If entity manager will be clustered or passivated, specify a unique value for property 'hibernate.ejb.entitymanager_factory_name'
+2015-12-09 11:31:54 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2015-12-09 11:31:54 WARN  SessionFactoryBuilderImpl:648 - Unrecognized hbm2ddl_auto value : none.  Supported values include create, create-drop, update, and validate.  Ignoring
+2015-12-09 11:31:54 WARN  EntityManagerFactoryRegistry:63 - HHH000436: Entity manager factory name (e-movie) is already registered.  If entity manager will be clustered or passivated, specify a unique value for property 'hibernate.ejb.entitymanager_factory_name'
+2015-12-09 11:31:54 INFO  Server:37 - Servidor iniciado na porta 8000
+2015-12-09 11:32:08 INFO  RequestHandler:56 - Processing request #1: POST /users
+2015-12-09 11:32:34 INFO  RequestHandler:56 - Processing request #2: GET /movies
+2015-12-09 11:32:35 INFO  RequestHandler:56 - Processing request #3: GET /movies/1
+2015-12-09 11:32:35 INFO  RequestHandler:56 - Processing request #4: GET /exhibitions
+2015-12-09 11:32:38 INFO  RequestHandler:56 - Processing request #5: GET /chairs
+2015-12-09 11:32:38 INFO  RequestHandler:56 - Processing request #6: GET /chairs
+2015-12-09 11:32:38 INFO  RequestHandler:56 - Processing request #7: GET /exhibitions/8
+2015-12-09 11:32:38 INFO  RequestHandler:56 - Processing request #8: GET /chairs
+2015-12-09 11:32:40 INFO  RequestHandler:56 - Processing request #9: GET /chairs
+2015-12-09 11:32:41 INFO  RequestHandler:56 - Processing request #10: GET /chairs
+2015-12-09 11:32:41 INFO  RequestHandler:56 - Processing request #11: GET /exhibitions/8
+2015-12-09 11:32:52 INFO  RequestHandler:56 - Processing request #12: POST /tickets
+2015-12-09 11:34:19 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2015-12-09 11:34:20 WARN  SessionFactoryBuilderImpl:648 - Unrecognized hbm2ddl_auto value : none.  Supported values include create, create-drop, update, and validate.  Ignoring
+2015-12-09 11:34:20 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2015-12-09 11:34:20 WARN  SessionFactoryBuilderImpl:648 - Unrecognized hbm2ddl_auto value : none.  Supported values include create, create-drop, update, and validate.  Ignoring
+2015-12-09 11:34:20 WARN  EntityManagerFactoryRegistry:63 - HHH000436: Entity manager factory name (e-movie) is already registered.  If entity manager will be clustered or passivated, specify a unique value for property 'hibernate.ejb.entitymanager_factory_name'
+2015-12-09 11:34:20 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2015-12-09 11:34:21 WARN  SessionFactoryBuilderImpl:648 - Unrecognized hbm2ddl_auto value : none.  Supported values include create, create-drop, update, and validate.  Ignoring
+2015-12-09 11:34:21 WARN  EntityManagerFactoryRegistry:63 - HHH000436: Entity manager factory name (e-movie) is already registered.  If entity manager will be clustered or passivated, specify a unique value for property 'hibernate.ejb.entitymanager_factory_name'
+2015-12-09 11:34:21 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2015-12-09 11:34:21 WARN  SessionFactoryBuilderImpl:648 - Unrecognized hbm2ddl_auto value : none.  Supported values include create, create-drop, update, and validate.  Ignoring
+2015-12-09 11:34:21 WARN  EntityManagerFactoryRegistry:63 - HHH000436: Entity manager factory name (e-movie) is already registered.  If entity manager will be clustered or passivated, specify a unique value for property 'hibernate.ejb.entitymanager_factory_name'
+2015-12-09 11:34:21 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2015-12-09 11:34:21 WARN  SessionFactoryBuilderImpl:648 - Unrecognized hbm2ddl_auto value : none.  Supported values include create, create-drop, update, and validate.  Ignoring
+2015-12-09 11:34:21 WARN  EntityManagerFactoryRegistry:63 - HHH000436: Entity manager factory name (e-movie) is already registered.  If entity manager will be clustered or passivated, specify a unique value for property 'hibernate.ejb.entitymanager_factory_name'
+2015-12-09 11:34:22 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2015-12-09 11:34:22 WARN  SessionFactoryBuilderImpl:648 - Unrecognized hbm2ddl_auto value : none.  Supported values include create, create-drop, update, and validate.  Ignoring
+2015-12-09 11:34:22 WARN  EntityManagerFactoryRegistry:63 - HHH000436: Entity manager factory name (e-movie) is already registered.  If entity manager will be clustered or passivated, specify a unique value for property 'hibernate.ejb.entitymanager_factory_name'
+2015-12-09 11:34:22 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2015-12-09 11:34:22 WARN  SessionFactoryBuilderImpl:648 - Unrecognized hbm2ddl_auto value : none.  Supported values include create, create-drop, update, and validate.  Ignoring
+2015-12-09 11:34:22 WARN  EntityManagerFactoryRegistry:63 - HHH000436: Entity manager factory name (e-movie) is already registered.  If entity manager will be clustered or passivated, specify a unique value for property 'hibernate.ejb.entitymanager_factory_name'
+2015-12-09 11:34:22 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2015-12-09 11:34:22 WARN  SessionFactoryBuilderImpl:648 - Unrecognized hbm2ddl_auto value : none.  Supported values include create, create-drop, update, and validate.  Ignoring
+2015-12-09 11:34:22 WARN  EntityManagerFactoryRegistry:63 - HHH000436: Entity manager factory name (e-movie) is already registered.  If entity manager will be clustered or passivated, specify a unique value for property 'hibernate.ejb.entitymanager_factory_name'
+2015-12-09 11:34:22 INFO  Server:37 - Servidor iniciado na porta 8000
+2015-12-09 11:34:31 INFO  RequestHandler:56 - Processing request #1: GET /movies
+2015-12-09 11:34:32 INFO  RequestHandler:56 - Processing request #2: GET /movies/1
+2015-12-09 11:34:32 INFO  RequestHandler:56 - Processing request #3: GET /exhibitions
+2015-12-09 11:34:35 INFO  RequestHandler:56 - Processing request #4: GET /chairs
+2015-12-09 11:34:35 INFO  RequestHandler:56 - Processing request #5: GET /chairs
+2015-12-09 11:34:35 INFO  RequestHandler:56 - Processing request #6: GET /exhibitions/8
+2015-12-09 11:34:35 INFO  RequestHandler:56 - Processing request #7: GET /chairs
+2015-12-09 11:34:37 INFO  RequestHandler:56 - Processing request #8: GET /chairs
+2015-12-09 11:34:39 INFO  RequestHandler:56 - Processing request #9: GET /chairs
+2015-12-09 11:34:39 INFO  RequestHandler:56 - Processing request #10: GET /exhibitions/8
+2015-12-09 11:34:50 INFO  RequestHandler:56 - Processing request #11: POST /tickets
+2015-12-09 11:36:22 INFO  RequestHandler:56 - Processing request #12: GET /movies
+2015-12-09 11:36:33 INFO  RequestHandler:56 - Processing request #13: POST /movies
+2015-12-09 11:36:33 ERROR ServiceExecutorTemplate:116 - 
+2015-12-09 11:37:00 INFO  RequestHandler:56 - Processing request #14: POST /movies
+2015-12-09 11:37:09 INFO  RequestHandler:56 - Processing request #15: POST /sessions
+2015-12-09 11:37:09 ERROR ServiceExecutorTemplate:116 - 
+2015-12-09 11:40:31 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2015-12-09 11:40:32 WARN  SessionFactoryBuilderImpl:648 - Unrecognized hbm2ddl_auto value : none.  Supported values include create, create-drop, update, and validate.  Ignoring
+2015-12-09 11:40:33 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2015-12-09 11:40:33 WARN  SessionFactoryBuilderImpl:648 - Unrecognized hbm2ddl_auto value : none.  Supported values include create, create-drop, update, and validate.  Ignoring
+2015-12-09 11:40:33 WARN  EntityManagerFactoryRegistry:63 - HHH000436: Entity manager factory name (e-movie) is already registered.  If entity manager will be clustered or passivated, specify a unique value for property 'hibernate.ejb.entitymanager_factory_name'
+2015-12-09 11:40:33 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2015-12-09 11:40:33 WARN  SessionFactoryBuilderImpl:648 - Unrecognized hbm2ddl_auto value : none.  Supported values include create, create-drop, update, and validate.  Ignoring
+2015-12-09 11:40:33 WARN  EntityManagerFactoryRegistry:63 - HHH000436: Entity manager factory name (e-movie) is already registered.  If entity manager will be clustered or passivated, specify a unique value for property 'hibernate.ejb.entitymanager_factory_name'
+2015-12-09 11:40:34 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2015-12-09 11:40:34 WARN  SessionFactoryBuilderImpl:648 - Unrecognized hbm2ddl_auto value : none.  Supported values include create, create-drop, update, and validate.  Ignoring
+2015-12-09 11:40:34 WARN  EntityManagerFactoryRegistry:63 - HHH000436: Entity manager factory name (e-movie) is already registered.  If entity manager will be clustered or passivated, specify a unique value for property 'hibernate.ejb.entitymanager_factory_name'
+2015-12-09 11:40:34 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2015-12-09 11:40:34 WARN  SessionFactoryBuilderImpl:648 - Unrecognized hbm2ddl_auto value : none.  Supported values include create, create-drop, update, and validate.  Ignoring
+2015-12-09 11:40:34 WARN  EntityManagerFactoryRegistry:63 - HHH000436: Entity manager factory name (e-movie) is already registered.  If entity manager will be clustered or passivated, specify a unique value for property 'hibernate.ejb.entitymanager_factory_name'
+2015-12-09 11:40:34 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2015-12-09 11:40:35 WARN  SessionFactoryBuilderImpl:648 - Unrecognized hbm2ddl_auto value : none.  Supported values include create, create-drop, update, and validate.  Ignoring
+2015-12-09 11:40:35 WARN  EntityManagerFactoryRegistry:63 - HHH000436: Entity manager factory name (e-movie) is already registered.  If entity manager will be clustered or passivated, specify a unique value for property 'hibernate.ejb.entitymanager_factory_name'
+2015-12-09 11:40:35 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2015-12-09 11:40:35 WARN  SessionFactoryBuilderImpl:648 - Unrecognized hbm2ddl_auto value : none.  Supported values include create, create-drop, update, and validate.  Ignoring
+2015-12-09 11:40:35 WARN  EntityManagerFactoryRegistry:63 - HHH000436: Entity manager factory name (e-movie) is already registered.  If entity manager will be clustered or passivated, specify a unique value for property 'hibernate.ejb.entitymanager_factory_name'
+2015-12-09 11:40:35 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2015-12-09 11:40:35 WARN  SessionFactoryBuilderImpl:648 - Unrecognized hbm2ddl_auto value : none.  Supported values include create, create-drop, update, and validate.  Ignoring
+2015-12-09 11:40:35 WARN  EntityManagerFactoryRegistry:63 - HHH000436: Entity manager factory name (e-movie) is already registered.  If entity manager will be clustered or passivated, specify a unique value for property 'hibernate.ejb.entitymanager_factory_name'
+2015-12-09 11:40:35 INFO  Server:37 - Servidor iniciado na porta 8000
+2015-12-09 11:40:52 INFO  RequestHandler:56 - Processing request #1: POST /sessions
+2015-12-09 11:40:52 ERROR ServiceExecutorTemplate:116 - 
+2015-12-09 11:41:03 INFO  RequestHandler:56 - Processing request #2: POST /sessions
+2015-12-09 11:41:08 INFO  RequestHandler:56 - Processing request #3: POST /rooms
+2015-12-09 11:41:14 INFO  RequestHandler:56 - Processing request #4: POST /rooms
+2015-12-09 11:41:19 INFO  RequestHandler:56 - Processing request #5: POST /rooms
+2015-12-09 11:41:21 INFO  RequestHandler:56 - Processing request #6: GET /movies
+2015-12-09 11:41:21 INFO  RequestHandler:56 - Processing request #7: GET /sessions
+2015-12-09 11:41:21 INFO  RequestHandler:56 - Processing request #8: GET /rooms
+2015-12-09 11:41:25 INFO  RequestHandler:56 - Processing request #9: POST /exhibitions
+2015-12-09 11:41:37 INFO  RequestHandler:56 - Processing request #10: POST /exhibitions

@@ -25,6 +25,7 @@ public class Room implements Serializable {
 	private /*@ spec_public nullable @*/ Integer id;
 	
 	private /*@ spec_public nullable @*/ int rows;
+	//@ initially rows == 0;
 
 	public Room() {
 		super();

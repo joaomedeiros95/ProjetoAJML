@@ -31,7 +31,12 @@ public class Session implements Serializable {
 	public Session() {
 		super();
 	}
-	
+
+	/*@ requires hour != null;
+	  @ ensures this.dayWeek == dayWeek && this.hour == hour;
+	  @ assignable dayWeek;
+	  @ assignable hour;
+	 */
 	public Session(int dayWeek, Date hour) {
 		this();
 		this.dayWeek = dayWeek;

@@ -74,8 +74,12 @@ public class TicketService {
 		return daoTicket.listByExhibitionId(idExhibition);
 	}
 
-	/*@ assignable \nothing;
-	  @ ensures ticket == \old(ticket);
+	/*@ public normal_behavior 
+	  @ 	requires this.compareDates(ticket, TICKET_BUY_TIME_LIMIT) == true;
+	  @		ensures ticket == \old(ticket);
+	  @ also
+	  @ 	public exceptional_behavior
+	  @			requires this.compareDates(ticket, TICKET_BUY_TIME_LIMIT) == false;
 	 */
 	public /*@ pure @*/ void create(Ticket ticket) throws ServiceException, DaoException, InterruptedException {
 		String token = generateToken(ticket.getUser().getId());
@@ -94,8 +98,12 @@ public class TicketService {
 		}
 	}
 
-	/*@ assignable \nothing;
-	  @ ensures ticket == \old(ticket);
+	/*@ public normal_behavior 
+	  @ 	requires this.compareDates(ticket, TICKET_CHANGE_TIME_LIMIT) == true;
+	  @		ensures ticket == \old(ticket);
+	  @ also
+	  @ 	public exceptional_behavior
+	  @			requires this.compareDates(ticket, TICKET_CHANGE_TIME_LIMIT) == false;
 	 */
 	public /*@ pure @*/ void update(Ticket ticket) throws ServiceException, DaoException, InterruptedException {
 		Server.writeSemaphore.acquire();
@@ -143,7 +151,7 @@ public class TicketService {
 	 */
 	/*@ ensures ticket == \old(ticket);
 	 */
-	private boolean compareDates(Ticket ticket, long timeLimit) {
+	public /*@ pure @*/ boolean compareDates(Ticket ticket, long timeLimit) {
 		Session session = ticket.getExhibition().getSession();
 		Integer sessionDayWeek = session.getDayWeek();
 		Date sessionHour = session.getHour();

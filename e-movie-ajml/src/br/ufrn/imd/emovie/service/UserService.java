@@ -70,9 +70,6 @@ public class UserService {
 		daoUser.delete(id);
 	}
 	
-	/*@ assignable \nothing;
-	  @ ensures user == \old(user);
-	 */
 	public /*@ pure @*/ User checkLogin(User user) throws DaoException {
 		return daoUser.checkLogin(user);
 	}

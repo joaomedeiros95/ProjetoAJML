@@ -32,14 +32,17 @@ public class Exhibition implements Serializable {
 	@ManyToOne
 	@JoinColumn(name = "id_movie")
 	private /*@ spec_public nullable @*/  Movie movie;
+	//@ initially movie == null;
 	
 	@ManyToOne
 	@JoinColumn(name = "id_session")
 	private /*@ spec_public nullable @*/  Session session;
+	//@ initially session == null;
 	
 	@ManyToOne
 	@JoinColumn(name = "id_room")
 	private /*@ spec_public nullable @*/  Room room;
+	//@ initially room == null;
 
 	public Exhibition() {}
 	
