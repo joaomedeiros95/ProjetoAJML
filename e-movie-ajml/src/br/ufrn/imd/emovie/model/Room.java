@@ -18,6 +18,7 @@ public class Room implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 	
+	//@ public invariant 0 <= rows;
 	@Id
 	@GeneratedValue
 	@Column(name = "id_room")
@@ -29,12 +30,18 @@ public class Room implements Serializable {
 		super();
 	}
 	
-	public Room(Integer rows) {
+	/*@ requires 2 < rows;
+	  @ ensures this.rows == rows;
+	 */
+	public Room(int rows) {
 		this();
 		this.rows = rows;
 	}
 	
-	public Room(Integer id, Integer rows) {
+	/*@ requires 2 < rows;
+	  @ ensures this.rows == rows;
+	 */
+	public Room(Integer id, int rows) {
 		this();
 		this.id = id;
 		this.rows = rows;
@@ -53,7 +60,9 @@ public class Room implements Serializable {
 		return rows;
 	}
 
-	//@ ensures this.rows == rows;
+	/*@ requires 1 < rows;
+	  @ ensures this.rows == rows;
+	 */
 	public void setRows(int rows) {
 		this.rows = rows;
 	}

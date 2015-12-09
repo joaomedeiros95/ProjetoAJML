@@ -54,8 +54,7 @@ public class ParameterFilter extends Filter {
 		}
 	}
 
-	@SuppressWarnings("unchecked")
-	private void parseQuery(String query, Map<String, Object> parameters) throws UnsupportedEncodingException {
+	private  void parseQuery(/*@ nullable @*/String query, Map<String, Object> parameters) throws UnsupportedEncodingException {
 
 		if (query != null) {
 			String pairs[] = query.split("[&]");

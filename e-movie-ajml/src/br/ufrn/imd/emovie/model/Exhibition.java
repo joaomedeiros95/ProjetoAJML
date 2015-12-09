@@ -43,6 +43,10 @@ public class Exhibition implements Serializable {
 
 	public Exhibition() {}
 	
+	/*@ requires 2.5 < price;
+	  @ ensures this.price == price;
+	  @ assignable price;
+	 */
 	public Exhibition(Movie movie, Session session, Room room, float price) {
 		this();
 		this.movie = movie;
@@ -69,7 +73,7 @@ public class Exhibition implements Serializable {
 		return price;
 	}
 
-	/*@ requires 0 < price;
+	/*@ requires 2.5 < price;
 	  @ ensures this.price == price;
 	  @ assignable price;
 	 */
