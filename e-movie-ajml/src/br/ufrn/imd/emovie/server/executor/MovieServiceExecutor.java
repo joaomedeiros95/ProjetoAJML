@@ -141,6 +141,8 @@ public class MovieServiceExecutor extends ServiceExecutorTemplate {
 		}
 	}
 
+	/*@ ensures \result != null;
+	 */
 	@Override
 	public String processPostOther(HttpExchange httpExchange, List<String> urlParams,
 			Map<String, Object> requestParams) {

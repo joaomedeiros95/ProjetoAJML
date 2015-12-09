@@ -21,6 +21,8 @@ import com.sun.net.httpserver.Filter;
  */
 public class ParameterFilter extends Filter {
 
+	/*@ ensures \result != null;
+	 */
 	@Override
 	public String description() {
 		return "Parses the requested URI for parameters";
