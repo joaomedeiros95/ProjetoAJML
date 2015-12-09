@@ -148,7 +148,8 @@ public class ExhibitionServiceExecutor extends ServiceExecutorTemplate {
 		}
 	}
 
-	/*@ ensures \result != null;
+	/*@ also
+	  @ ensures \result != null;
 	 */
 	@Override
 	public String processPostOther(HttpExchange httpExchange, List<String> urlParams,
