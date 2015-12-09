@@ -1,0 +1,17 @@
+44 Classes
+3202 Linhas de Código (server)
+219 Métodos
+Herança(19) e Interface (8)
+LOC
+2 invariant
+4 initially
+0 constraint
+46 assignable
+11 requires
+91 ensures
+4 behavior (normal and exceptional)
+0 \forall
+0 \exists
+0 Modelos (represents)
+behaviour subtyping
+77 nullable
