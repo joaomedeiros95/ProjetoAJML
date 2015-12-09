@@ -1,4 +1,4 @@
-44 Classes
+﻿44 Classes
 3202 Linhas de Código (server)
 219 Métodos
 Herança(19) e Interface (8)
@@ -13,5 +13,5 @@ LOC
 0 \forall
 0 \exists
 0 Modelos (represents)
-behaviour subtyping
+0 behaviour subtyping
 77 nullable

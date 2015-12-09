@@ -901,3 +901,29 @@
 2015-12-09 11:41:21 INFO  RequestHandler:56 - Processing request #8: GET /rooms
 2015-12-09 11:41:25 INFO  RequestHandler:56 - Processing request #9: POST /exhibitions
 2015-12-09 11:41:37 INFO  RequestHandler:56 - Processing request #10: POST /exhibitions
+2015-12-09 12:06:26 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2015-12-09 12:06:27 WARN  SessionFactoryBuilderImpl:648 - Unrecognized hbm2ddl_auto value : none.  Supported values include create, create-drop, update, and validate.  Ignoring
+2015-12-09 12:06:28 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2015-12-09 12:06:28 WARN  SessionFactoryBuilderImpl:648 - Unrecognized hbm2ddl_auto value : none.  Supported values include create, create-drop, update, and validate.  Ignoring
+2015-12-09 12:06:28 WARN  EntityManagerFactoryRegistry:63 - HHH000436: Entity manager factory name (e-movie) is already registered.  If entity manager will be clustered or passivated, specify a unique value for property 'hibernate.ejb.entitymanager_factory_name'
+2015-12-09 12:06:28 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2015-12-09 12:06:28 WARN  SessionFactoryBuilderImpl:648 - Unrecognized hbm2ddl_auto value : none.  Supported values include create, create-drop, update, and validate.  Ignoring
+2015-12-09 12:06:28 WARN  EntityManagerFactoryRegistry:63 - HHH000436: Entity manager factory name (e-movie) is already registered.  If entity manager will be clustered or passivated, specify a unique value for property 'hibernate.ejb.entitymanager_factory_name'
+2015-12-09 12:06:28 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2015-12-09 12:06:29 WARN  SessionFactoryBuilderImpl:648 - Unrecognized hbm2ddl_auto value : none.  Supported values include create, create-drop, update, and validate.  Ignoring
+2015-12-09 12:06:29 WARN  EntityManagerFactoryRegistry:63 - HHH000436: Entity manager factory name (e-movie) is already registered.  If entity manager will be clustered or passivated, specify a unique value for property 'hibernate.ejb.entitymanager_factory_name'
+2015-12-09 12:06:29 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2015-12-09 12:06:29 WARN  SessionFactoryBuilderImpl:648 - Unrecognized hbm2ddl_auto value : none.  Supported values include create, create-drop, update, and validate.  Ignoring
+2015-12-09 12:06:29 WARN  EntityManagerFactoryRegistry:63 - HHH000436: Entity manager factory name (e-movie) is already registered.  If entity manager will be clustered or passivated, specify a unique value for property 'hibernate.ejb.entitymanager_factory_name'
+2015-12-09 12:06:29 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2015-12-09 12:06:29 WARN  SessionFactoryBuilderImpl:648 - Unrecognized hbm2ddl_auto value : none.  Supported values include create, create-drop, update, and validate.  Ignoring
+2015-12-09 12:06:29 WARN  EntityManagerFactoryRegistry:63 - HHH000436: Entity manager factory name (e-movie) is already registered.  If entity manager will be clustered or passivated, specify a unique value for property 'hibernate.ejb.entitymanager_factory_name'
+2015-12-09 12:06:30 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2015-12-09 12:06:30 WARN  SessionFactoryBuilderImpl:648 - Unrecognized hbm2ddl_auto value : none.  Supported values include create, create-drop, update, and validate.  Ignoring
+2015-12-09 12:06:30 WARN  EntityManagerFactoryRegistry:63 - HHH000436: Entity manager factory name (e-movie) is already registered.  If entity manager will be clustered or passivated, specify a unique value for property 'hibernate.ejb.entitymanager_factory_name'
+2015-12-09 12:06:30 WARN  connections:71 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2015-12-09 12:06:30 WARN  SessionFactoryBuilderImpl:648 - Unrecognized hbm2ddl_auto value : none.  Supported values include create, create-drop, update, and validate.  Ignoring
+2015-12-09 12:06:30 WARN  EntityManagerFactoryRegistry:63 - HHH000436: Entity manager factory name (e-movie) is already registered.  If entity manager will be clustered or passivated, specify a unique value for property 'hibernate.ejb.entitymanager_factory_name'
+2015-12-09 12:06:30 INFO  Server:37 - Servidor iniciado na porta 8000
+2015-12-09 12:06:39 INFO  RequestHandler:56 - Processing request #1: POST /sessions
+2015-12-09 12:06:39 ERROR ServiceExecutorTemplate:116 - 
