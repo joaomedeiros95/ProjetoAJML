@@ -59,24 +59,32 @@ public class ChairServiceExecutor extends ServiceExecutorTemplate {
 		return "";
 	}
 
+	/*@ ensures \result != null;
+	 */
 	@Override
 	public String processPostCreate(Map<String, Object> requestParams) {
 		LOGGER.warn("Operation not supported");
 		return createErrorJSONResponse("Operation not supported");
 	}
 
+	/*@ ensures \result != null;
+	 */
 	@Override
 	public String processPostUpdate(Map<String, Object> requestParams) {
 		LOGGER.warn("Operation not supported");
 		return createErrorJSONResponse("Operation not supported");
 	}
 
+	/*@ ensures \result != null;
+	 */
 	@Override
 	public String processPostDelete(Map<String, Object> requestParams) {
 		LOGGER.warn("Operation not supported");
 		return createErrorJSONResponse("Operation not supported");
 	}
 
+	/*@ ensures \result != null;
+	 */
 	@Override
 	public String processPostOther(HttpExchange httpExchange, List<String> urlParams,
 			Map<String, Object> requestParams) {
